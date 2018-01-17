@@ -19,7 +19,7 @@ section#program table tr td:first-child {
   width: 84px
 }
 
-section#commitment img {
+section#commitment img, section#position_papper img {
   border-radius: 150px;
   width: 75%;
   margin: auto;
@@ -32,6 +32,11 @@ section#commitment a.participant {
   width: 100%;
   display: block;
   margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+section#participants_list li {
+  
 }
 
 ul#principles {
@@ -54,5 +59,35 @@ ul#principles {
     width: 150px;
     text-align: center;
   }
+}
 
+section#position_papper {
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+#footer li {
+  float: left;
+  margin-right: 1.5em;  
+}
+
+#footer p.license {
+  margin-top: 1.5em;  
+  margin-bottom: 0px;
+  clear: both;  
+}
+
+img.logo {
+  width: 120px;
+  float: left;
+  margin-right: 10px;
+}
+div#header hr {
+  clear: both;
+}
+
+section#propose div.bg-info {
+  background-color: #68ACAC !important ;
 }
