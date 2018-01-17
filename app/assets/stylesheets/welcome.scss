@@ -1,3 +1,39 @@
+section#propose ul, section#commitment ul {
+  list-style: none;
+}
+
+.after-promisses {
+  margin-top: 20px;
+}
+
+section#program table th {
+  text-align: center;
+}
+
+section#program table td {
+  padding: 10px;
+  font-size: 18px;
+}
+
+section#program table tr td:first-child {
+  width: 84px
+}
+
+section#commitment img {
+  border-radius: 150px;
+  width: 75%;
+  margin: auto;
+  display: block;
+}
+
+section#commitment a.participant {
+  font-size: 23px;
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin-top: 10px;
+}
+
 ul#principles {
   list-style: none;
   
