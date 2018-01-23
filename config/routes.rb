@@ -3,5 +3,6 @@ Rails.application.routes.draw do
     root 'welcome#index'
     
     get 'pappers/:id', to: "pappers#show"
+    get '/payment', to: "welcome#payment"
     
 end

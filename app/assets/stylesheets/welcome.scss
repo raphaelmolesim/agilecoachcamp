@@ -1,3 +1,7 @@
+body {
+  font-size: 18px;
+}
+
 section#propose ul, section#commitment ul {
   list-style: none;
 }
@@ -95,3 +99,31 @@ div#header hr {
 section#propose div.bg-info {
   background-color: #68ACAC !important ;
 }
+
+button#register {
+  width: 100%;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.payment-methods {
+  list-style: none;  
+}
+.payment-methods li {
+  float: left;
+  padding: 20px 50px; 
+}
+
+.payment {
+  width: 200px;
+}
+.payment-card {
+  width: 150px;
+}
+.options {
+  list-style: none;  
+  
+}
+
+
+
