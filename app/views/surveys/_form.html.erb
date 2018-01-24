@@ -1,15 +1,16 @@
 <%= form_with(model: survey, local: true) do |form| %>
   <h1>Inscreva se agora!</h1><br>
-  <div class="form-group">
-    <label for="survey_email">Endereço de e-mail</label>
-    <%= form.email_field :email, id: :survey_email, class: "form-control", "aria-describedby": "emailHelp", placeholder: "Entre seu e-mail" %>
-    <small id="emailHelp" class="form-text text-muted">Não vamos compartilhar seu e-mail com ninguém.</small>
-  </div>
 
   <div class="form-group">
     <label for="survey_name">Nome</label>
     <%= form.text_field :name, id: :survey_name, class: "form-control", "aria-describedby": "nameHelp", placeholder: "Entre seu nome" %>
 
+  </div>
+  
+  <div class="form-group">
+    <label for="survey_email">Endereço de e-mail</label>
+    <%= form.email_field :email, id: :survey_email, class: "form-control", "aria-describedby": "emailHelp", placeholder: "Entre seu e-mail" %>
+    <small id="emailHelp" class="form-text text-muted">Não vamos compartilhar seu e-mail com ninguém.</small>
   </div>
 
   <br>
@@ -24,7 +25,7 @@
      <li>Custo de atividades e materiais realizadas no evento</li>
   </ul>
   <p>
-     Cobrança extra para bebidas e estacionamento.
+     <span class="text-danger">Cobrança extra para bebidas e estacionamento.</span>
   </p>
 
 
@@ -32,19 +33,19 @@
     <div class="form-check">
       <label class="form-check-label">
         <input type="radio" class="form-check-input" name="optionsRadios" id="subscriptionOption1" value="regular-subscription">
-         <span class="text-info">Inscrição Regular (R$ 1.080,00)</span> - Dividir o quarto com outro participante do evento
+         Inscrição Regular <strong>(R$ 1.080,00)</strong> - Dividir o quarto com outro participante do evento
       </label>
     </div>
     <div class="form-check">
     <label class="form-check-label">
         <input type="radio" class="form-check-input" name="optionsRadios" id="subscriptionOption2" value="individual-subscription">
-        <span class="text-info">Inscrição Individual (R$ 1.410,00)</span> - Um quarto só para você.
+        Inscrição Individual <strong>(R$ 1.410,00)</strong> - Um quarto só para você.
       </label>
     </div>
     <div class="form-check">
     <label class="form-check-label">
         <input type="radio" class="form-check-input" name="optionsRadios" id="subscriptionOption3" value="family-subscription">
-        <span class="text-info">Inscrição Familia (R$ 1.800,00) </span> - Leve sua família, 2 adultos e 1 criança até 10 anos
+        Inscrição Familia <strong>(R$ 1.800,00)</strong> - Leve sua família, 2 adultos e 1 criança até 10 anos
       </label>
     </div>
   </fieldset>
