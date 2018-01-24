@@ -11,6 +11,8 @@
 // about supported directives.
 //
 //= require rails-ujs
+//= require jquery-3.3.1.min
+//= require popper.min
 //= require turbolinks
 //= require bootstrap.min
 //= require bootstrap.bundle.min
