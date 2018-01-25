@@ -1,17 +1,6 @@
 class SurveysController < ApplicationController
   before_action :set_survey, only: [:show, :edit, :update, :destroy]
 
-  # GET /surveys
-  # GET /surveys.json
-  def index
-    @surveys = Survey.all
-  end
-
-  # GET /surveys/new
-  def new
-    @survey = Survey.new
-  end
-
   # POST /surveys
   # POST /surveys.json
   def create
