@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   resources :surveys, only: [:new, :create ]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root 'welcome#index'
-  get 'pappers/:id', to: "pappers#show"
+  get 'papers/:id', to: "papers#show"
   get 'surveys', to: "admin#surveys"
 end

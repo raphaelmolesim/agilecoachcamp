@@ -1,4 +1,4 @@
-class PappersController < ApplicationController
+class PapersController < ApplicationController
   
   def show
     render "#{params[:id]}.html.erb"
