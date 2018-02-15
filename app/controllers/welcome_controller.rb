@@ -4,4 +4,8 @@ class WelcomeController < ApplicationController
     
   end
   
+  def advertising
+    
+  end
+  
 end
