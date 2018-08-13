@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   get 'papers/:id', to: "papers#show"
   get 'surveys', to: "admin#surveys"
   get 'advertising', to: "welcome#advertising"
+  get 'prestacao_contas', to: "welcome#prestacao_contas"
 end
