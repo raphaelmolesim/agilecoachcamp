@@ -29,7 +29,6 @@ section#program table tr td:first-child {
 
 section#commitment img, section#position_papper img {
   border-radius: 150px;
-  width: 75%;
   margin: auto;
   display: block;
   height: 183px;
@@ -134,17 +133,17 @@ button#register {
 .lead {
   font-size: 20px;
 }
+@media only screen and (min-width: 980px){
+  .image-ideas {
+    height: 50px;
+  }
 
-.image-ideas {
-  height: 50px;
+  .helper {
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+  }
 }
-
-.helper {
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-}
-
 body {
   padding-top: 80px;
   font-family: Verdana;
@@ -176,3 +175,36 @@ ul.payment-methods {
   color: #008800;
 }
 
+
+section#photos {
+  text-align: center;
+  div.mb-1 {
+    padding-top: 40px;
+  }
+ }
+ 
+@media only screen and (min-width: 980px){
+  section#photos div#general_photos {
+    top:100px
+  }
+}
+
+@media only screen and (min-width: 980px){
+  .show-desktop {
+    display: block !important;
+  }
+}
+
+ul.reset {
+  padding-left: 0px;
+}
+
+section div.jumbotron {
+  padding: 2em 0.5em;
+}
+
+@media only screen and (min-width: 980px){
+  section#news div.jumbotron {
+    padding: 4rem 2rem !important;
+  }
+}

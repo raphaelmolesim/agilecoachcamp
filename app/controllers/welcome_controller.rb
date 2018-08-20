@@ -12,4 +12,8 @@ class WelcomeController < ApplicationController
     
   end
   
+  def conteudo_gerado
+    
+  end
+  
 end
