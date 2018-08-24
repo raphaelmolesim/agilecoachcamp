@@ -1,0 +1,80 @@
+body#acc2019 {  
+  .navbar-brand {
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    background-image: url("/assets/camp.png");
+    background-repeat: no-repeat;
+    background-position: -10% 100%;
+    background-size: 30%;
+  }
+  
+  #landing-img {
+    width: 100%;
+    height: 500px;
+    background-image: url("/assets/landing_2019_dark.jpg");
+    background-size:     cover;
+    background-repeat: no-repeat;
+    background-position:  0% -25%;
+    padding: 160px 50px;
+    h1 { 
+      color: #FFF;
+    }
+  }
+  
+  #proposal {
+    text-align: center;
+    padding: 40px;
+  }
+  
+  #promisses {
+    text-align: center;
+    padding-left: 0px;
+    li {
+      list-style: none;
+      float: left;
+      
+      div {
+        background-color: #EFEEEA;
+        margin: 40px;
+        padding: 20px;
+      }
+      
+      img {
+        margin: 20px auto;
+        display: block;
+        width: 70px;
+        height: 70px;
+      }
+    }
+  } 
+  
+  .alternated {
+    background-color: #EFEEEA;
+  } 
+  
+  .image-div {
+    margin: auto;
+    padding: 40px;
+  }
+  
+  #unconf {
+    padding-bottom: 40px;
+  }
+  
+  .center {
+    display: block;
+    text-align: center;
+  }
+  
+  #pomisses-div {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (min-width: 980px) {
+  body#acc2019 #landing-img h1 {  
+  text-align: center;
+  font-size: 70px;
+  }
+}
