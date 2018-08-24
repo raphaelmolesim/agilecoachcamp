@@ -177,7 +177,9 @@ ul.payment-methods {
 
 
 section#photos {
-  text-align: center;
+  div{
+    text-align: center;
+  }
   div.mb-1 {
     padding-top: 40px;
   }
