@@ -3,6 +3,7 @@ class SurveysController < ApplicationController
   # GET /surveys/new
   def new
     @survey = Survey.new
+    render "/2018/surveys/new", :layout => "2018/layouts/application"
   end
 
   # POST /surveys

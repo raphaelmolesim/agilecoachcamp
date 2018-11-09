@@ -4,6 +4,6 @@ class AdminController < ApplicationController
   
   def surveys
     @surveys = Survey.all
-    render "surveys/index"
+    render "2018/surveys/index", :layout => "2018/layouts/application"
   end
 end

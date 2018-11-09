@@ -20,6 +20,15 @@ class WelcomeController < ApplicationController
     render_based_by_year :conteudo_gerado
   end
   
+  def shared_room
+    @room_option = :shared
+    render_based_by_year :room_options
+  end
+  
+  def comming_soon
+    render "#{params[:year]}/welcome/comming_soon", layout: "#{params[:year]}/layouts/comming_soon_layout.html.erb"
+  end
+  
   private 
     def render_based_by_year action
       year = params[:year]

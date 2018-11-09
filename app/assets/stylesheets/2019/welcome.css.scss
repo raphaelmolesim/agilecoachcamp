@@ -22,6 +22,10 @@ body#acc2019 {
     }
   }
   
+  #empty-background {
+    height: 40px;
+  }
+  
   #proposal {
     text-align: center;
     padding: 40px;
@@ -70,11 +74,121 @@ body#acc2019 {
   #pomisses-div {
     margin-top: 40px;
   }
+  
+  ul#testmonials-list {
+    list-style: none;
+    padding: 0px;
+    li:hover {
+      background: white;
+      img {
+        border: 5px solid #6A974D;
+      }
+    }
+    li {
+      float: left;
+      margin: 20px auto;
+      padding: 20px;
+      text-align: center;
+      blockquote {
+        padding-top: 20px;
+        font-style: italic;
+      }
+      img {
+        border-radius: 200px;
+        border: 5px solid white;
+        width: 130px;
+      }
+      h4 {
+        color: black;
+        font-weight: bolder;
+      }
+      p {
+        font-weight: bold;
+        color: #E9C44D;
+        font-size: 14px;
+      }
+    }
+  }
+  
+  #pricing {
+    h2 {
+      text-align: center;
+      padding: 40px;
+    }
+    ul {
+      padding: 0px;
+      list-style: none;
+      li:last-child {
+        padding-bottom: 0px;
+      }
+      li {
+        float: left;
+        margin: auto;
+        padding-bottom: 60px;
+        p {
+          margin-bottom:0px;
+          height: 48px;
+        }
+        img {
+          width: 328.32px;
+        }
+        
+        .details-icon {
+          background-color: white;
+          width: 50px;
+          height: 50px;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: -25px;
+          display: block;
+          border-radius: 200px;
+        }
+        
+        .price {
+          color: #6A974D;
+          font-weight: bolder;
+          font-size: 20px;
+        }
+        
+        .wrap:hover .overlay{
+          opacity: 1;
+        }
+        div.wrap {
+          position: relative;
+          width: 100%;
+        }
+        
+        p {
+          text-align: center;
+        }
+        h4 {
+          color: black;
+          text-align: center;
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+  
+  #room-options {
+    #room_title {
+      background-color: #6A974D;
+      h1 { 
+        color: white;
+        font-weight: bolder;
+        padding: 100px;
+        text-align: center;
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 980px) {
   body#acc2019 #landing-img h1 {  
   text-align: center;
   font-size: 70px;
+  }
+  #pricing ul li {
+    padding-bottom: 0px !important;
   }
 }
