@@ -3,7 +3,7 @@ body#comming_soon {
   padding: 0;
   color: white;
   background-color: black;
-  background: url('/assets/bonfire.jpg') center center / cover no-repeat;
+  background: url(asset-path('bonfire.jpg')) center center / cover no-repeat;
   
   .content {
       margin: 0 auto;
@@ -81,7 +81,7 @@ body#comming_soon {
 
   @media (max-width: 767px) {
       .fullscreen-bg {
-          background: url('/assets/bonfire.jpg') center center / cover no-repeat;
+          background: url(asset-path('bonfire.jpg')) center center / cover no-repeat;
       }
 
       .fullscreen-bg__video {
