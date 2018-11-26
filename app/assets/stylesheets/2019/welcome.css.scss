@@ -3,7 +3,7 @@ body#acc2019 {
     padding-left: 50px;
     padding-top: 20px;
     padding-bottom: 15px;
-    background-image: url("/assets/camp.png");
+    background-image: url(image-path('/assets/camp.png'));
     background-repeat: no-repeat;
     background-position: -10% 100%;
     background-size: 30%;
@@ -12,8 +12,8 @@ body#acc2019 {
   #landing-img {
     width: 100%;
     height: 500px;
-    background-image: url("/assets/landing_2019_dark.jpg");
-    background-size:     cover;
+    background-image: url(image-path('landing_2019_dark.jpg'));
+    background-size:  cover;
     background-repeat: no-repeat;
     background-position:  0% -25%;
     padding: 160px 50px;
