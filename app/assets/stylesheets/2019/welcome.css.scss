@@ -80,7 +80,6 @@ body#acc2019 {
   }
   
   .center {
-    display: block;
     text-align: center;
   }
   
@@ -300,6 +299,80 @@ body#acc2019 {
     height: 93px;
   }
   
+ 
+  .submission {
+    padding-top: 100px;
+  }
+  
+  .right {
+    text-align: right;
+  }
+
+  .submit-pp {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: -100px;
+  }
+  
+  #criterias {
+    h3 {
+      display: block;
+      text-align: center;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0px;
+      li {
+        text-align: center;
+        float: left;
+        padding: 50px 15px;
+        background: white;
+        margin-top: 25px;
+        margin-bottom: 25px;
+
+        height: 380px;
+        img {
+          margin: auto;
+          display: block;
+          width: 100px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  
+  #stages {
+    h3 {
+      text-align: center;
+      padding: 40px;
+    }
+    ul {
+      text-align: center;
+      list-style: none;
+      padding-left: 0px;
+      li {
+        display: block;
+        width: 130px;
+        margin: auto;
+        span {
+          font-size: 50px;
+          display: block;
+          text-align: center;
+        }
+      }
+    }
+  }
+  
+  #submit-now {
+    background-image: url(image-path("resort-1.jpg"));
+    height: 500px;
+    text-align: center;
+    a {
+      font-size: 35px;
+      margin: 400px 0px;
+    }
+  }
+  
 }
 
 @media only screen and (min-width: 980px) {
@@ -327,5 +400,21 @@ body#acc2019 {
   #footer {
     padding-top: 130px;
     padding-bottom: 30px;
+  }
+  #criterias {
+    margin-right: 20px;
+    margin-left: 20px;
+    li {
+      margin: 0px 25px;
+    }
+  }
+  #stages {
+    height: 370px;
+    ul {
+      li {
+        margin: 0px 20px !important;
+        float: left;
+      }
+    }
   }
 }

@@ -25,6 +25,10 @@ class WelcomeController < ApplicationController
     render_based_by_year :room_options
   end
   
+  def submission
+    render_based_by_year :submission
+  end
+  
   def comming_soon
     render "#{params[:year]}/welcome/comming_soon", layout: "#{params[:year]}/layouts/comming_soon_layout.html.erb"
   end
