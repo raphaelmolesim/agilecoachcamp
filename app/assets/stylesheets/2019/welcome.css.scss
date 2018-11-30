@@ -10,6 +10,8 @@ body#acc2019 {
     background-size: 30%;
   }
   
+  
+  
   #landing-img {
     width: 100%;
     height: 500px;
@@ -19,11 +21,13 @@ body#acc2019 {
     background-position:  0% -25%;
     padding: 65px 50px;
     text-align: center;
-    button {
+    
+    a#subscribe-now {
       font-size: 25px;
       font-weight: bold;
       margin-top: 10px;
     }
+    
     h1 { 
       color: #FFF;
     } 
