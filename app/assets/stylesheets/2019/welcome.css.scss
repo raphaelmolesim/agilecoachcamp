@@ -10,6 +10,23 @@ body#acc2019 {
     background-size: 30%;
   }
   
+  .navbar-dark .navbar-nav {
+    a.nav-link:link, 
+    a.nav-link:hover, 
+    a.nav-link:active, 
+    a.nav-link:visited  { 
+      color: black;
+    }
+  }
+  
+  .navbar-dark .navbar-nav .show > .nav-link, 
+  .navbar-dark .navbar-nav .show > .nav-link:hover,
+  .navbar-dark .navbar-nav .show > .nav-link:active,
+  .navbar-dark .navbar-nav .show > .nav-link:visited,
+  .navbar-dark .navbar-nav .show > .nav-link:focus { 
+    color: black !important;
+  }
+  
   #landing-img {
     width: 100%;
     height: 500px;
@@ -133,9 +150,13 @@ body#acc2019 {
   #pricing {
     h2 {
       text-align: center;
-      padding: 40px;
+      padding-bottom: 40px;
     }
-    ul {
+    h3 {
+      text-align: center;
+    }
+    
+    ul#rooms {
       padding: 0px;
       list-style: none;
       text-align: center;
@@ -156,14 +177,12 @@ body#acc2019 {
         }
         
         .details-icon {
-          background-color: white;
           width: 50px;
           height: 50px;
           margin-left: auto;
           margin-right: auto;
           margin-top: -25px;
           display: block;
-          border-radius: 200px;
         }
         
         .price {
@@ -189,6 +208,12 @@ body#acc2019 {
           font-weight: bolder;
         }
       }
+    }
+    
+    .white-box {
+      background-color: white;
+      padding: 40px;
+      margin-bottom: 40px;
     }
   }
   
@@ -391,9 +416,14 @@ body#acc2019 {
     padding: 40px;
     top: 0px;
   }
-  #pricing ul li {
-    padding-bottom: 0px !important;
-    margin: auto;
+  #pricing {
+    ul li {
+      padding-bottom: 0px !important;
+      margin: auto;
+    }
+    .white-box {
+      margin: 0px 40px 40px 40px;
+    }
   }
   body#acc2019 ul#testmonials-list li {
     margin: 20px auto;
