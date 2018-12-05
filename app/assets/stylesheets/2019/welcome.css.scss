@@ -209,12 +209,12 @@ body#acc2019 {
         }
       }
     }
-    
-    .white-box {
-      background-color: white;
-      padding: 40px;
-      margin-bottom: 40px;
-    }
+  }
+  
+  .white-box {
+    background-color: white;
+    padding: 40px;
+    margin-bottom: 40px;
   }
   
   #room-options {
@@ -289,8 +289,26 @@ body#acc2019 {
     }
   }
   
+  #resort {
+
+    background-image: url(image-path("cheiro-de-mato.jpg"));
+    min-height: 600px;
+    
+    .white-box {
+      text-align: center;
+      margin-top: 50px;
+    }
+    img { 
+      width: 300px;
+      margin-bottom: 20px;
+    }
+    p {
+      text-align: left;
+    }
+  }
+  
   #footer {
-      padding: 70px 70px 0px 70px;
+      padding: 70px 70px 0px 20px;
     
     h3 {
       font-size: 18px;
@@ -397,12 +415,6 @@ body#acc2019 {
       font-size: 35px;
       margin: 400px 0px;
     }
-  }
- 
- 
-  #resort {
-    background-image: url(image-path("cheiro-de-mato.jpg"));
-    height: 600px;
   }
   
 }
