@@ -1,6 +1,7 @@
 class WelcomeController < ApplicationController
 
   def index
+    @apiKey = ENV['GOOGLE_MAPS_APIKEY']
     render_based_by_year :index
   end
 
