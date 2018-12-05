@@ -6,8 +6,8 @@ Rails.application.routes.draw do
   get 'welcome', to: "welcome#index", :year => 2019
   get 'submission', to: "welcome#submission", :year => 2019
   
-  root 'welcome#comming_soon', :year => 2019
-  #get 'quarto-compartilhado', to: "welcome#shared_room", :year => 2019
+  root 'welcome#index', :year => 2019
+  #root 'welcome#comming_soon', :year => 2019
   
   scope "/2018" do
     root 'welcome#index', :year => 2018
