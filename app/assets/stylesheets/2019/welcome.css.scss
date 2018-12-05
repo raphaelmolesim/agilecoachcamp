@@ -301,7 +301,7 @@ body#acc2019 {
       margin-top: 50px;
     }
     img { 
-      width: 300px;
+      width: 100%;
       margin-bottom: 20px;
     }
     p {
@@ -454,6 +454,12 @@ body#acc2019 {
       top: 0px;
     }
     
+    #promisses {
+      li div {
+        margin: 40px;
+      }
+    }
+    
     #pricing {
       ul li {
         padding-bottom: 0px !important;
@@ -488,6 +494,12 @@ body#acc2019 {
           margin: 0px 20px !important;
           float: left;
         }
+      }
+    }
+    
+    #resort {
+      img { 
+        width: 50%;
       }
     }
   }
