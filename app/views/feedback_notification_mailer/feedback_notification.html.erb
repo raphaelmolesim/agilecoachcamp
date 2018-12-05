@@ -1,0 +1,34 @@
+<p>Olá <%= @name %>,</p>
+
+<p>Este é o resultado do feedback sobre sua participação no Agile Coach Camp 2018:</p>
+
+<table style="border: 1px solid black; text-align:center">
+  
+  <tr style="height: 35px; font-size: 14px;">
+    <td colspan="3" style="font-weight:bolder">Você recomendaria a participação dessa pessoa na próxima edição do evento?</td>
+  </tr>
+  
+  <tr style="height: 35px; font-size: 14px;">
+    <td style="width:<%= 100.0 * ((@sim*1.0)/@total) %>% ;background-color:#DCE9D5; ">Sim(<%= @sim %>)</td>
+    <td style="width:<%= 100.0 * ((@nao*1.0)/@total) %>% ;background-color:#EECDCD ">Não(<%= @nao %>)</td>
+    <td style="width:<%= 100.0 * ((@nao_sei*1.0)/@total) %>% ;background-color:#FDF3D0 ">Não Sei(<%= @nao_sei %>)</td>
+  </tr>
+  
+  <tr>
+    <td colspan="3">
+      <ul style="text-align: left">
+        <% @justificativas.each do |justificativa| %>
+        <li><%= justificativa %></li>
+        <% end %>
+      </ul>
+    </td>
+  </tr>
+  
+</table>
+
+<p>
+  Por favor, <b>responda este e-mail com as suas considerações</b> sobre o feedback que você recebeu, pois isso será importante para a próxima edição do Agile Coach Camp.
+</p>
+
+<p>Obrigado!</p>
+<p>Organização do Agile Coach Camp</p>
