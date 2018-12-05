@@ -1,13 +1,15 @@
 body#acc2019 {  
   
   .navbar-brand {
-    padding-left: 50px;
-    padding-top: 20px;
-    padding-bottom: 15px;
+    padding-left: 44px;
+    padding-top: 17px;
+    padding-bottom: 11px;
     background-image: url(image-path('camp.png'));
     background-repeat: no-repeat;
-    background-position: -10% 100%;
-    background-size: 30%;
+    background-position: -5% 100%;
+    background-size: 27%;
+    margin-right: 0px;
+    font-size: 18px;
   }
   
   .navbar-dark .navbar-nav {
@@ -420,49 +422,72 @@ body#acc2019 {
 }
 
 @media only screen and (min-width: 980px) {
-  body#acc2019 #landing-img h1 {  
-  text-align: center;
-  font-size: 70px;
-  }
-  body#acc2019 #landing-img {
-    padding: 130px 50px;
+  body#acc2019 {
+    
+    .navbar-brand {
+      padding-left: 50px;
+      padding-top: 20px;
+      padding-bottom: 15px;
+      background-position: -10% 100%;
+      background-size: 30%;
+    }
+    
+    .navbar-expand-lg .navbar-collapse {
+      padding-top: 5px;
+    }
+    
+    #landing-img h1 {  
+      text-align: center;
+      font-size: 70px;
+    }
+   
+    #landing-img {
+      padding: 130px 50px;
+    }
+    
     button {
       margin-top: 20px;
     }
-  }
-  body#acc2019 .image-div {
-    padding: 40px;
-    top: 0px;
-  }
-  #pricing {
-    ul li {
-      padding-bottom: 0px !important;
-      margin: auto;
+  
+    .image-div {
+      padding: 40px;
+      top: 0px;
     }
-    .white-box {
-      margin: 0px 40px 40px 40px;
+    
+    #pricing {
+      ul li {
+        padding-bottom: 0px !important;
+        margin: auto;
+      }
+      .white-box {
+        margin: 0px 40px 40px 40px;
+      }
     }
-  }
-  body#acc2019 ul#testmonials-list li {
-    margin: 20px auto;
-  }
-  #footer {
-    padding-top: 130px;
-    padding-bottom: 30px;
-  }
-  #criterias {
-    margin-right: 20px;
-    margin-left: 20px;
-    li {
-      margin: 0px 25px;
+    
+    ul#testmonials-list li {
+      margin: 20px auto;
     }
-  }
-  #stages {
-    height: 370px;
-    ul {
+  
+    #footer {
+      padding-top: 130px;
+      padding-bottom: 30px;
+    }
+  
+    #criterias {
+      margin-right: 20px;
+      margin-left: 20px;
       li {
-        margin: 0px 20px !important;
-        float: left;
+        margin: 0px 25px;
+      }
+    }
+    
+    #stages {
+      height: 370px;
+      ul {
+        li {
+          margin: 0px 20px !important;
+          float: left;
+        }
       }
     }
   }
