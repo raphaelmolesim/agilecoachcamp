@@ -365,6 +365,7 @@ body#acc2019 {
     h3 {
       display: block;
       text-align: center;
+      padding: 40px;
     }
     ul {
       list-style: none;
@@ -376,7 +377,6 @@ body#acc2019 {
         background: white;
         margin-top: 25px;
         margin-bottom: 25px;
-
         height: 380px;
         img {
           margin: auto;
@@ -415,8 +415,47 @@ body#acc2019 {
     height: 500px;
     text-align: center;
     a {
-      font-size: 35px;
+      font-size: 30px;
       margin: 400px 0px;
+    }
+  }
+
+  #process {
+    h3 { 
+      text-align: center;
+    }
+    min-height: 590px;
+    ul {
+     list-style: none; 
+     padding-left: 0px;
+     li {
+       text-align: center;
+       float: left;
+       padding: 50px 15px;
+       background: white;
+       margin: 15px auto;
+       height: 420px;
+       img {
+         margin: auto;
+         display: block;
+         width: 100px;
+         margin-bottom: 20px;
+       }
+     }
+     .offset {
+       background: none;
+       background-image: url(image-path("next.png"));
+       background-repeat: no-repeat;
+       background-position:center; 
+       background-size: 60px 60px;
+     }
+     
+    }
+  }
+  
+  .submission {
+    img {
+      width: 100%;
     }
   }
   
@@ -480,8 +519,6 @@ body#acc2019 {
     }
   
     #criterias {
-      margin-right: 20px;
-      margin-left: 20px;
       li {
         margin: 0px 25px;
       }
@@ -493,6 +530,14 @@ body#acc2019 {
         li {
           margin: 0px 20px !important;
           float: left;
+        }
+      }
+    }
+    
+    #process {
+      ul {
+        li {
+          margin: 25px 5px;
         }
       }
     }

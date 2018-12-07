@@ -27,8 +27,51 @@
     <div class="col-lg-12 col-sm-12" ></div>
   </div>
   
-  <div class="row alternated" id="criterias">
-    <div class="alternated col-lg-6 col-sm-12">
+  <div class="row alternated" id="process">
+    <div class="alternated col-lg-12 col-sm-12">
+      <h3>Etapas do processo de inscrição</h3>      
+
+      <ul>
+        <li class="col-lg-2 col-sm-12">
+          <%= image_tag "approved.png" %>
+          <h4>Position Paper aprovado</h4>
+          <p>O Position Paper deve ser avaliado e aprovado pela organização de acordo com os critérios pré-estabecidos.</p>
+        </li>
+        
+        <li class="col-lg-1 col-sm-12 offset d-none d-lg-block">
+        </li>
+        
+        <li class="col-lg-2 col-sm-12">
+          <%= image_tag "feedback.png" %>
+          <h4>Participação aceita</h4>
+          <p>Neste passo tanto o Position Paper e como os <a href="https://goo.gl/TCWmZD">feedbacks de participação</a> (só para quem esteve da edição passada) são utilizados para aceitação.</p>
+        </li>
+        
+        <li class="col-lg-1 col-sm-12 offset d-none d-lg-block">
+        </li>
+        
+        <li class="col-lg-2 col-sm-12">
+          <%= image_tag "credit-card.png" %>
+          <h4>Pagamento confirmado</h4>
+          <p>O pagamento precisa ser processado e confirmado pela organização de acordo com as opções de de acomodação.</p>
+          
+        </li>
+        
+        <li class="col-lg-1 col-sm-12 offset d-none d-lg-block">
+        </li>
+        
+        <li class="col-lg-2 col-sm-12">
+          <%= image_tag "user.png" %>
+          <h4>Publicação do Position Paper</h4>
+          <p>Uma foto e nome do participante é publicado na Home do evento junto com o  Position Paper.</p>
+        </li>
+      </ul>
+    </div>
+    <p class="cleafix"><p> 
+  </div>
+  
+  <div class="row">
+    <div class="col-lg-6 col-sm-12" id="criterias">
       <h3>Critérios de revisão do Position Paper</h3>      
 
       <ul>
@@ -44,24 +87,10 @@
         </li>
       </ul>
     </div>
-    <div class="alternated col-lg-6 col-sm-12">
-      <h3>Critérios de aceitação de participação</h3>
 
-      <ul>
-        <li class="col-lg-5 col-sm-12">
-          <%= image_tag "approved.png" %>
-          <h4>Aceitação do Paper</h4><hr>
-          Uma vez tendo passado pelo o processo de submissão, o Position Paper deve ter sido aceito. 
-        </li>
-        <li class="col-lg-5 col-sm-12">
-          <%= image_tag "feedback.png" %>
-          <h4>Boa avaliação</h4><hr>
-          Cada edição do Agile Coach Camp tem uma sessão de feedback entre os participantes, que também é utilizado pela organização para aceitar os participantes.
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div class="col-lg-12 col-sm-12" id="stages">
+
+  
+  <div class="col-lg-6 col-sm-12" id="stages">
       <h3>Etapas de avaliação de um Position Paper</h3>
 
       <ul>
@@ -77,6 +106,8 @@
       </ul>
     </div>  
   </div>  
+  
+</div>
   
   <%= render "2019/welcome/pricing" %>
   
