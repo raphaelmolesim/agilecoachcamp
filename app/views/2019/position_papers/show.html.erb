@@ -1,0 +1,53 @@
+<br><br><br>
+
+
+
+<div class="row" id="view-position-paper">
+  <div class="col-lg-1 col-sm-12 offset">
+  </div>
+  <div class="col-lg-10 col-sm-12">
+    
+    <div class="alert alert-dismissible alert-success">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <p id="notice"><%= notice %></p>
+    </div>
+    
+    <h1>
+      <%= @position_paper.name %>
+      <%= image_tag "profile-pic/mariana-graf.jpg"%>
+    </h1>
+    
+    <p style="display:none; clear:both">
+      <strong>Year:</strong>
+      <%= @position_paper.year %>
+    </p>
+
+    <p>
+      <h4>Qual é a sua experiência colaborando para que equipes e organizações sejam ágeis?
+</h4>
+    </p>
+    <p>
+      <%= @position_paper.question_1.gsub(/\r/, "<br>").html_safe %>
+    </p>
+
+    <p>
+      <h2>O que você planeja aprender ou explorar nesse Camp?
+</h2>
+      <%= @position_paper.question_2.gsub(/\r/, "<br>").html_safe %>
+    </p>
+
+    <p>
+      <h2>Qual é o maior desafio para a comunidade ágil nos próximos 5 anos e por que?</h2>
+      <%= @position_paper.question_3 %>
+    </p>
+    
+    <% if action_name == "edit"%>
+    <%= link_to 'Editar', edit_position_paper_path(@position_paper), class: "btn btn-secondary" %> 
+    <%= link_to 'Voltar', position_papers_path, class: "btn btn-info" %>
+    <% end %>
+  </div>
+  <div class="col-lg-1 col-sm-12 offset">
+  </div>
+</div>
+
+

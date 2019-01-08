@@ -1,13 +1,15 @@
 Rails.application.routes.draw do
+  root 'welcome#index', :year => 2019
+  
   get 'admin/surveys'
 
   #resources :surveys, only: [:new, :create ]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   get 'welcome', to: "welcome#index", :year => 2019
   get 'submission', to: "welcome#submission", :year => 2019
-  
-  root 'welcome#index', :year => 2019
-  #root 'welcome#comming_soon', :year => 2019
+  scope "/2019" do
+    resources :position_papers, :year => 2019
+  end
   
   scope "/2018" do
     root 'welcome#index', :year => 2018

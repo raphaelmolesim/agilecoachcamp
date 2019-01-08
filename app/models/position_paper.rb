@@ -1,0 +1,2 @@
+class PositionPaper < ApplicationRecord
+end

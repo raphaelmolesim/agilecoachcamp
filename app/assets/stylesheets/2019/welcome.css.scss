@@ -469,7 +469,34 @@ body#acc2019 {
     }
   }
   
+  #view-position-paper {
+    img {
+      border-radius: 150px;
+      margin: 0px 30px;
+      width: 225px;
+      display: block;
+      float: right;
+    }
+  }
+
+  .position-paper-form {
+    textarea {
+      height: 300px;
+    }
+  }
+
+  .alert-success { 
+    margin-top: 10px;
+    button {
+      margin-top: 0px;
+    }
+    p {
+      margin-bottom: 0px;
+    }
+  }
 }
+
+
 
 @media only screen and (min-width: 980px) {
   body#acc2019 {

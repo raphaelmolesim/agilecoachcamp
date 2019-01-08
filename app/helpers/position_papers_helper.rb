@@ -1,0 +1,2 @@
+module PositionPapersHelper
+end
