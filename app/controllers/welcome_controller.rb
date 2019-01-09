@@ -2,6 +2,7 @@ class WelcomeController < ApplicationController
 
   def index
     @apiKey = ENV['GOOGLE_MAPS_APIKEY']
+    @position_papers = PositionPaper.where(year: params[:year])
     render_based_by_year :index
   end
 

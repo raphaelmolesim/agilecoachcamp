@@ -212,45 +212,17 @@
       
       <ul class="row">
         
+        <% @position_papers.each do |position_paper| %>
         <li class="col-lg-3 col-md-7 col-sm-6">
-          <%= image_tag "profile-pic/mariana-graf.jpg"%>
-          <a class="participant" href="#">Mariana Graf</a>
+          <img src="<%= position_paper.photo_url %>">
+            <% if position_paper.filled_out? %>
+              <%= link_to position_paper.name, position_paper, class: "participant"%>
+            <% else %>
+              <span><%= position_paper.name %></span>
+            <% end %>
         </li>
+        <% end %>
         
-        <li class="col-lg-3 col-md-7 col-sm-6">
-          <%= image_tag "profile-pic/victor-hugo.jpg"%>
-          <a class="participant" href="#">Victor Hugo Germano</a>
-        </li>
-        
-        <li class="col-lg-3 col-md-7 col-sm-6">
-          <%= image_tag "profile-pic/mariana-zaparolli.jpg"%>
-          <a class="participant" href="#">Mariana Zaparolli</a>
-        </li>
-        
-        <li class="col-lg-3 col-md-7 col-sm-6">
-          <%= image_tag "profile-pic/rafael_albino.png"%>
-          <a class="participant" href="#">Raphael Albino</a>
-        </li>
-        
-        <li class="col-lg-3 col-md-7 col-sm-6">
-          <%= image_tag "profile-pic/annelise-gripp.jpg"%>
-          <a class="participant" href="#">Annelise Gripp</a>
-        </li>
-        
-        <li class="col-lg-3 col-md-7 col-sm-6">
-          <%= image_tag "profile-pic/marcely-santos.jpg"%>
-          <a class="participant" href="#">Marcely Santos</a>
-        </li>
-        
-        <li class="col-lg-3 col-md-7 col-sm-6">
-          <%= image_tag "profile-pic/matheus-haddad.jpg"%>
-          <a class="participant" href="#">Matheus Haddad</a>
-        </li>
-        
-        <li class="col-lg-3 col-md-7 col-sm-6">
-          <%= image_tag "profile-pic/raphael-molesim.jpg"%>
-          <a class="participant" href="#">Raphael Molesim</a>
-        </li>
     </div>
   </div>
   

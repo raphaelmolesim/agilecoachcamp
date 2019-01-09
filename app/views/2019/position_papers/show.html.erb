@@ -6,21 +6,19 @@
   <div class="col-lg-1 col-sm-12 offset">
   </div>
   <div class="col-lg-10 col-sm-12">
-    
+    <% if not notice.blank? %>
     <div class="alert alert-dismissible alert-success">
-      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <button type="button" class="close " data-dismiss="alert" >&times;</button>
       <p id="notice"><%= notice %></p>
     </div>
+    <% end %>
     
     <h1>
       <%= @position_paper.name %>
-      <%= image_tag "profile-pic/mariana-graf.jpg"%>
+      <img src="<%= @position_paper.photo_url %>" >
     </h1>
     
-    <p style="display:none; clear:both">
-      <strong>Year:</strong>
-      <%= @position_paper.year %>
-    </p>
+    <br style="clear:both">
 
     <p>
       <h4>Qual é a sua experiência colaborando para que equipes e organizações sejam ágeis?
@@ -41,13 +39,12 @@
       <%= @position_paper.question_3 %>
     </p>
     
-    <% if action_name == "edit"%>
-    <%= link_to 'Editar', edit_position_paper_path(@position_paper), class: "btn btn-secondary" %> 
-    <%= link_to 'Voltar', position_papers_path, class: "btn btn-info" %>
-    <% end %>
+    <%= link_to 'Voltar', "/welcome#parcelamento", class: "btn btn-info" %>
   </div>
   <div class="col-lg-1 col-sm-12 offset">
   </div>
+  
+  
 </div>
 
 

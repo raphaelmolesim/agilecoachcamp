@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   get 'welcome', to: "welcome#index", :year => 2019
   get 'submission', to: "welcome#submission", :year => 2019
   scope "/2019" do
-    resources :position_papers, :year => 2019
+    resources :position_papers, :year => 2019 
   end
   
   scope "/2018" do

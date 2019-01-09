@@ -1,11 +1,13 @@
 class PositionPapersController < ApplicationController
-  before_action :set_position_paper, only: [:show, :edit, :update, :destroy]
+  before_action :set_position_paper, only: [:edit, :update, :destroy, :show]
 
   before_action :authenticate, except: :show
   
   def authenticate
-    authenticate_or_request_with_http_basic do |email, password|
-      email == 'frodo' && password == 'thering'
+    @user_id = ENV['USER_ID'] || "frodo"
+    @password = ENV['PASSWORD'] || "thering"
+    authenticate_or_request_with_http_basic do |user_id, password|
+      user_id == @user_id && password == @password
     end
   end
 
@@ -43,7 +45,7 @@ class PositionPapersController < ApplicationController
         format.html { redirect_to @position_paper, notice: 'Position paper was successfully created.' }
         format.json { render :show, status: :created, location: @position_paper }
       else
-        format.html { render :new }
+        format.html { render_based_by_year :new }
         format.json { render json: @position_paper.errors, status: :unprocessable_entity }
       end
     end
@@ -76,12 +78,12 @@ class PositionPapersController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_position_paper
-      @position_paper = PositionPaper.find(params[:id])
+      @position_paper = PositionPaper.where(permalink: params[:id]).first
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def position_paper_params
-      params.require(:position_paper).permit(:name, :year, :question_1, :question_2, :question_3)
+      params.require(:position_paper).permit(:name, :year, :question_1, :question_2, :question_3, :photo_url)
     end
     
     def render_based_by_year action
