@@ -25,18 +25,18 @@
 </h4>
     </p>
     <p>
-      <%= @position_paper.question_1.gsub(/\r/, "<br>").html_safe %>
+      <%= render_markdown_as_html @position_paper.question_1 %>
     </p>
 
     <p>
       <h2>O que você planeja aprender ou explorar nesse Camp?
 </h2>
-      <%= @position_paper.question_2.gsub(/\r/, "<br>").html_safe %>
+      <%= render_markdown_as_html @position_paper.question_2 %>
     </p>
 
     <p>
       <h2>Qual é o maior desafio para a comunidade ágil nos próximos 5 anos e por que?</h2>
-      <%= @position_paper.question_3 %>
+      <%= render_markdown_as_html @position_paper.question_3 %>
     </p>
     
     <%= link_to 'Voltar', "/welcome#parcelamento", class: "btn btn-info" %>
