@@ -14,7 +14,7 @@ class PositionPapersController < ApplicationController
   # GET /position_papers
   # GET /position_papers.json
   def index
-    @position_papers = PositionPaper.where(year: params[:year])
+    @position_papers = PositionPaper.where(year: params[:year]).order(:order_index)
     render_based_by_year :index
   end
 
@@ -83,7 +83,7 @@ class PositionPapersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def position_paper_params
-      params.require(:position_paper).permit(:name, :year, :question_1, :question_2, :question_3, :photo_url)
+      params.require(:position_paper).permit(:name, :year, :question_1, :question_2, :question_3, :photo_url, :order_index)
     end
     
     def render_based_by_year action
