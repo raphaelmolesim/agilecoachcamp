@@ -1,6 +1,6 @@
 body#acc2019 { 
   
-  .navbar-brand {;
+  .navbar-brand {
     background-image: url(image-path('logo.png'));
     background-repeat: no-repeat;
     background-size: 100%;
@@ -90,7 +90,7 @@ body#acc2019 {
     margin: auto;
     padding: 0px 28px;
     img {
-      height: 250px;
+      min-height: 250px;
     }
     h3 {
       text-align: center;
@@ -337,10 +337,10 @@ body#acc2019 {
     ul {
       list-style: none;
       padding-left: 0px;
-      
+       
       img {
         width: 200px;
-        margin: auto;
+        margin:auto;
       }
     }
     
@@ -560,6 +560,13 @@ body#acc2019 {
   
     #footer {
       padding: 130px 60px 30px 60px;
+      
+      #supporters {
+        li {
+          float: left;
+        }
+      }
+      
     }
   
     #criterias {
