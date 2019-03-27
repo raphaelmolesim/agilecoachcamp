@@ -25,3 +25,19 @@ $ ->
       $("form").submit()
     
     return false
+    
+  $(".raffled").on 'click', "a", () ->
+    $el = $(this).parent("form")
+    $.ajax({
+        url: '/2019/sorteio',
+        type: 'DELETE',
+        data: {
+          id: $("input[name=id]", $el).val()
+          authenticity_token: $("input[name=authenticity_token]", $el).val()
+        },
+        success: (result) -> 
+          location.reload(true)
+    });
+    
+  $(".available").on 'click', "a", () ->
+    $(this).parent("form").submit()

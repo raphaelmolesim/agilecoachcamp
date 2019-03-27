@@ -1,0 +1,49 @@
+<br><br><br><br>
+<div class="row">
+  <div class="col-lg-1 col-sm-12 offset"></div>
+  <div class="col-lg-10 col-sm-12">
+    <h1>Sorteio de facilitadores</h1>
+    
+    <div class="row">
+      <div class="col-lg-6 col-sm-12"><br><br>
+        <h4>Facilitadores que já contribuiram</h4>
+        
+        <% @raffled.each do |participant| %>
+        <ul class="raffled">
+          <li><%= participant.name %>  
+            <form style="display: inline">
+              <input type="hidden" name="id" value="<%= participant.id %>" />
+              <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" /> <a class="badge badge-danger delete_pick" style="color:white" >Apagar</a>
+            </form>
+          </li>
+        </ul>
+        <% end %>
+        <h4>Facilitadores disponíveis</h4>
+        <% @available.each do |participant| %>
+        <ul class="available">
+          <li><%= participant.name %>  
+            <form method="POST" action="/2019/sorteio" style="display: inline" >
+              <input type="hidden" name="id" value="<%= participant.id %>" />
+              <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" /> <a class="badge badge-danger set_pick" style="color:white">Retirar da lista</a>
+            </form>
+          </li>
+        </ul>
+        <% end %>
+      </div>
+      
+      
+      
+      <div class="col-lg-6 col-sm-12">
+        
+        
+        <form method="POST" action="/2019/sorteio">
+          <input type="hidden" name="authenticity_token" value="<% form_authenticity_token %>" />
+          <input type="submit" class="btn btn-danger" value="Sortear um novo participante" />
+        </form>
+          <br><br><br>
+        <h5><%= @pick.name if @pick %> </h5>
+      </div>
+    </div>
+    
+  </div>
+</div>
