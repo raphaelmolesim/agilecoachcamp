@@ -473,6 +473,29 @@ body#acc2019 {
     }
   }
   
+  #accountability {
+    margin: auto;
+    .cost {
+      color: red;
+    }
+    .earn {
+      color: green;
+    }
+    
+    .total {
+      font-weight: bold;
+      border-top: 1px solid gray;
+      padding-bottom: 15px;
+    }
+    
+    .result {
+      font-size: 18px;
+      font-weight: bolder;
+      border-top: 3px solid gray;
+      padding-bottom: 15px;
+    }
+  }
+  
   .submission {
     img {
       width: 100%;

@@ -18,6 +18,10 @@ class WelcomeController < ApplicationController
     render_based_by_year :prestacao_contas
   end
   
+  def accountability
+    render_based_by_year :accountability
+  end
+  
   def conteudo_gerado
     render_based_by_year :conteudo_gerado
   end

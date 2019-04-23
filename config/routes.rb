@@ -14,6 +14,7 @@ Rails.application.routes.draw do
     get 'sorteio', to: "welcome#raffle", :year => 2019
     post 'sorteio', to: "welcome#pick", :year => 2019
     delete 'sorteio', to: "welcome#unpick", :year => 2019
+    get 'prestacao_contas', to: "welcome#accountability", :year => 2019
   end
   
   scope "/2018" do
