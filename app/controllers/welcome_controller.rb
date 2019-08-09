@@ -35,44 +35,6 @@ class WelcomeController < ApplicationController
     render_based_by_year :submission
   end
   
-  def raffle
-    @raffled = PositionPaper.where(year: params[:year], raffled: true).order(:order_index)
-    @available = PositionPaper.where(year: params[:year], raffled: false).order(:order_index)
-    render_based_by_year :raffle
-  end
-  
-  def pick
-    @available = PositionPaper.where(year: params[:year], raffled: false).order(:order_index)
-    if not @available.empty?
-      if params[:id]
-        @pick = PositionPaper.find(params[:id])
-      else
-        if @available.size > 1
-          @pick = @available[Random.rand(0...(@available.size - 1))]
-        else
-          @pick = @available.first
-        end
-      end
-      @pick.raffled = true
-      @pick.save!
-    end
-    
-    @raffled = PositionPaper.where(year: params[:year], raffled: true).order(:order_index)
-    @available = PositionPaper.where(year: params[:year], raffled: false).order(:order_index)
-    render_based_by_year :raffle
-  end
-  
-  def unpick    
-    unpick = PositionPaper.find(params[:id])
-    unpick.raffled = false
-    unpick.save
-    
-    @raffled = PositionPaper.where(year: params[:year], raffled: true).order(:order_index)
-    @available = PositionPaper.where(year: params[:year], raffled: false).order(:order_index)
-    
-    render_based_by_year :raffle
-  end
-  
   def comming_soon
     render "#{params[:year]}/welcome/comming_soon", layout: "#{params[:year]}/layouts/comming_soon_layout.html.erb"
   end

@@ -11,9 +11,6 @@ Rails.application.routes.draw do
   get 'submission', to: "welcome#submission", :year => 2019
   scope "/2019" do
     resources :position_papers, :year => 2019 
-    get 'sorteio', to: "welcome#raffle", :year => 2019
-    post 'sorteio', to: "welcome#pick", :year => 2019
-    delete 'sorteio', to: "welcome#unpick", :year => 2019
     get 'prestacao_contas', to: "welcome#accountability", :year => 2019
   end
   
