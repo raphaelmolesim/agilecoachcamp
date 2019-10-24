@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'admin/surveys'
 
   get '/2019', to: "welcome#index", :year => 2019
+  get '/2020', to: "welcome#index", :year => 2020
 
   #resources :surveys, only: [:new, :create ]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
