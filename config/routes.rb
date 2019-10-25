@@ -10,6 +10,12 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   get 'welcome', to: "welcome#index", :year => 2019
   get 'submission', to: "welcome#submission", :year => 2019
+  
+  scope "/2020" do
+    resources :position_papers, :year => 2020 
+  end
+  
+  
   scope "/2019" do
     resources :position_papers, :year => 2019 
     get 'prestacao_contas', to: "welcome#accountability", :year => 2019
