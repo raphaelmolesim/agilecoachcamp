@@ -28,7 +28,7 @@ body#acc2019 {
   #landing-img {
     width: 100%;
     height: 500px;
-    background-image: url(image-path('fogueira-2.jpg'));
+    background-image: url(image-path('landing_2019_dark.jpg'));
     background-size:  cover;
     background-repeat: no-repeat;
     background-position:  0% 40%;
@@ -46,6 +46,7 @@ body#acc2019 {
       font-size: 34px;
     } 
   }
+
   
   .header-effect {
     background-image: url(image-path("bg-header-bottom.png"));
@@ -90,8 +91,7 @@ body#acc2019 {
     margin: auto;
     padding: 0px 28px;
     img {
-      height: 230px;
-      width: 230px;
+      width: 100%;
       margin: auto;
       margin-bottom: 40px;
     }
@@ -368,7 +368,7 @@ body#acc2019 {
   }
  
   .submission {
-    padding-top: 100px;
+    padding: 100px 40px 40px 40px;
   }
   
   .right {
@@ -393,11 +393,10 @@ body#acc2019 {
       li {
         text-align: center;
         float: left;
-        padding: 50px 15px;
+        padding: 0px 15px;
         background: white;
-        margin-top: 25px;
         margin-bottom: 25px;
-        height: 380px;
+        min-height: 340px;
         img {
           margin: auto;
           display: block;
@@ -444,7 +443,7 @@ body#acc2019 {
     h3 { 
       text-align: center;
     }
-    min-height: 590px;
+    min-height: 555px;
     ul {
      list-style: none; 
      padding-left: 0px;
@@ -453,7 +452,7 @@ body#acc2019 {
        float: left;
        padding: 50px 15px;
        background: white;
-       margin: 15px auto;
+       margin: 45px auto 0px auto;
        height: 420px;
        img {
          margin: auto;
@@ -464,6 +463,9 @@ body#acc2019 {
      }
      .offset {
        background: none;
+     }
+     
+     .arrow {
        background-image: url(image-path("next.png"));
        background-repeat: no-repeat;
        background-position:center; 
@@ -558,9 +560,9 @@ body#acc2019 {
       padding: 40px 40px 0px 40px;
       top: 0px;
       img {
-        width: 400px;
-        height: 400px;
-        margin-bottom: 0px;
+        width: 100%;
+        
+        margin-bottom: 40px;
       }
     }
     
@@ -585,11 +587,17 @@ body#acc2019 {
     }
   
     #footer {
-      padding: 130px 60px 30px 60px;
+      padding: 60px 60px 30px 60px;
+      
+      #organizers li {
+        float: left;
+        width: 33%;
+      }
       
       #supporters {
         li {
-          float: left;
+          //float: left;
+          margin: auto;
         }
       }
       
@@ -607,14 +615,6 @@ body#acc2019 {
         li {
           margin: 0px 20px !important;
           float: left;
-        }
-      }
-    }
-    
-    #process {
-      ul {
-        li {
-          margin: 25px 5px;
         }
       }
     }
