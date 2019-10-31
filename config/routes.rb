@@ -6,11 +6,12 @@ Rails.application.routes.draw do
   get '/2019', to: "welcome#index", :year => 2019
   get '/2020', to: "welcome#index", :year => 2020
   
-  resources :position_papers, except: [:show, :index]
+  resources :position_papers, except: [:show, :index, :edit, :update, :delete]
   get "/:year/position_papers/:id" => "position_papers#show"
   get "/:year/position_papers" => "position_papers#index"
   delete "/:year/position_papers/:id" => "position_papers#destroy"
-
+  get "/:year/position_papers/:id/edit" => "position_papers#edit"
+  patch "/:year/position_papers/:id" => "position_papers#update"
 
   #resources :surveys, only: [:new, :create ]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
