@@ -15,7 +15,7 @@ class PositionPapersController < ApplicationController
   # GET /position_papers.json
   def index
     @position_papers = PositionPaper.where(year: params[:year]).order(:order_index)
-    render_based_by_year :index
+    render :index
   end
 
   # GET /position_papers/1
@@ -27,23 +27,22 @@ class PositionPapersController < ApplicationController
   # GET /position_papers/new
   def new
     @position_paper = PositionPaper.new
-    render_based_by_year :new
+    render :new
   end
 
   # GET /position_papers/1/edit
   def edit
-    render_based_by_year :edit
+    render :edit
   end
 
   # POST /position_papers
   # POST /position_papers.json
   def create
     @position_paper = PositionPaper.new(position_paper_params)
-
     respond_to do |format|
       if @position_paper.save
-        format.html { redirect_to @position_paper, notice: 'Position paper was successfully created.' }
-        format.json { render :show, status: :created, location: @position_paper }
+        format.html { redirect_to @position_paper.path_with_year, notice: 'Position paper was successfully created.' }
+        format.json { render "show", status: :created, location: @position_paper, year: @position_paper.year}
       else
         format.html { render_based_by_year :new }
         format.json { render json: @position_paper.errors, status: :unprocessable_entity }
@@ -56,7 +55,7 @@ class PositionPapersController < ApplicationController
   def update
     respond_to do |format|
       if @position_paper.update(position_paper_params)
-        format.html { redirect_to @position_paper, notice: 'Position paper was successfully updated.' }
+        format.html { redirect_to @position_paper.path_with_year, notice: 'Position paper was successfully updated.' }
         format.json { render :show, status: :ok, location: @position_paper }
       else
         format.html { render :edit }
@@ -70,7 +69,7 @@ class PositionPapersController < ApplicationController
   def destroy
     @position_paper.destroy
     respond_to do |format|
-      format.html { redirect_to position_papers_url, notice: 'Position paper was successfully destroyed.' }
+      format.html { redirect_to "/#{params[:year]}/position_papers", notice: 'Position paper was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
@@ -78,7 +77,7 @@ class PositionPapersController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_position_paper
-      @position_paper = PositionPaper.where(permalink: params[:id]).first
+      @position_paper = PositionPaper.where(permalink: params[:id], year: params[:year]).first
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

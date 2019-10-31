@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113058871-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-113058871-1');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+    <title>Agile Coach Camp</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    '2019/application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
+    <meta property="og:image" content="<%= image_url "cheiro-de-mato-2.jpg" %>">
+    <meta property="og:description" content="A melhor oportunidade para discussões profundas sobre temas avançados entre agilistas experientes em um formato de desconferência, além de conectar você com outros profissionais e com pessoas realmente interessadas em melhorar o trabalho nas organizações.">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:url" content="http://agilecoachcamp.com.br">
+    <meta property="og:title" content="Agile Coach Camp 2019 - Liberado a prestação de contas e as fotos do evento">
+    <meta property="og:site_name" content="Agile Coach Camp">
+    
+    
+    
+    
+  </head>
+
+  <body id="acc2019">
+    
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NPTRZZS"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    <div class="fixed-top">
+      <div class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+        <a href="../" class="navbar-brand">&nbsp;</a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/#top">Home</a>
+            </li>
+            <!--<li class="nav-item">
+              <a class="nav-link" href="/submission">Inscrição</a>
+            </li>-->
+            <li class="nav-item"> 
+              <a class="nav-link" href="/#parcelamento">Participantes</a>
+            </li>
+            
+            <li class="nav-item"> 
+              <a class="nav-link" href="/2019/prestacao_contas"><b>Prestação de Contas</b></a>
+            </li>
+            
+            <li class="nav-item"> 
+              <a class="nav-link" href="https://photos.app.goo.gl/GuUkwuQZa8vvsAv5A"><b>Materiais</b></a>
+            </li>
+            
+            <li class="nav-item"> 
+              <a class="nav-link" href="https://photos.app.goo.gl/sT2MbCY9K2FVELwa8"><b>Fotos</b></a>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="editions">Edições Anteriores <span class="caret"></span></a>
+              <div class="dropdown-menu" aria-labelledby="editions">
+                <a class="dropdown-item" href="/2018">2018</a>
+              </div>
+            </li>
+          </ul>
+          
+        </div>
+        
+      </div>
+    </div>
+    <div class="row header-effect">
+     <div class="col-lg-12 col-sm-12"></div>
+    </div>
+  </div>
+    
+    <div class="bs-docs-section clearfix" id="empty-background">
+      
+    </div>
+
+  
+    <%= yield %>
+      
+      
+        <div class="row" id="footer">
+          <div class="col-lg-12 col-sm-12">
+            <ul class="row" id="footer-section">
+              <li class="col-lg-3 col-sm-12">
+                <h3>Informações de contato</h3>
+                <ul>
+                  <li><a href="mailto:organizacao@agilecoachcamp.com.br">organizacao@agilecoachcamp.com.br</a></li>
+                  <li><a href="http://facebook.com/agilecoachcampbr">facebook.com/agilecoachcampbr</a></li>
+                </ul>
+              </li>
+      
+      
+              <li class="col-lg-3 col-sm-12">
+                <h3>Localização</h3>
+                <ul>
+                  <li>
+                      <a href="https://refugiocheirodemato.com.br/">Eco Resort Refúgio Cheiro de Mato</a>
+                      <br>
+                      SP 023 
+                      <br>
+                      Estrada Mairiporã / Franco da Rocha
+                      <br>
+                      Vila Paula – Mairiporã – São Paulo
+                      <br>
+                      <a href="https://www.google.com.br/maps/place/Ref%C3%BAgio+Cheiro+de+Mato/@-23.3310185,-46.6559786,15z/data=!4m2!3m1!1s0x0:0xd51e91aee3a32f4b?ved=2ahUKEwil9ZTOjezeAhVKDpAKHUMZDYMQ_BIwF3oECAYQCA">Ver no mapa</a>
+                  </li>
+                </ul>
+              </li>
+        
+              <li class="col-lg-2 col-sm-12">
+              <h3>Organizadores</h3>
+                <ul>
+                  <li>Raphael Molesim</li>
+                  <li>Matheus Haddad</li>
+                  <li>Marcely Santos</li>
+                </ul>
+              </li>
+      
+        
+        
+              <li class="col-lg-4 col-sm-12">
+                <h3>Apoiadores</h3>
+                <ul id="supporters">
+                  <li class="center">
+                    <a href="https://www.agilealliance.org/agilealliancebrazil/" target="blank"><img src="https://www.agilealliance.org/wp-content/uploads/2018/06/Agile_Alliance_Brazil_Logo_Colour-400x253.jpg">
+              
+                  </li>
+                  <li class="center"><br>
+                  <a href="https://www.lean.org.br" target="blank"><img src="https://www.lean.org.br/cssGeral/images/logo-lean-institute-brasil-azul.png">
+              
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          </div>
+        </div>
+  
+        <div class="row division">
+          <div class="col-lg-12 col-sm-12" ></div>
+        </div>
+  
+        <div class="row alternated" id="final-footer">
+          <div class="alternated col-lg-12 col-sm-12">
+            Code released under the MIT License. Fork it <a href="https://github.com/raphaelmolesim/agilecoachcamp">here</a>
+            
+            <div>Icons made by <a href="https://www.flaticon.com/authors/dinosoftlabs" title="DinosoftLabs">DinosoftLabs</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+    </div>
+  </body>
+</html>

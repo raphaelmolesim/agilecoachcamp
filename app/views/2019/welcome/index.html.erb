@@ -221,7 +221,7 @@
         <li class="col-lg-3 col-md-7 col-sm-6">
           <img src="<%= position_paper.photo_url %>">
             <% if position_paper.filled_out? %>
-              <%= link_to position_paper.name, position_paper, class: "participant"%>
+              <%= link_to position_paper.name, position_paper.path_with_year, class: "participant"%>
             <% else %>
               <span><%= position_paper.name %></span>
             <% end %>

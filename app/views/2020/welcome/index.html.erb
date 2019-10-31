@@ -192,7 +192,7 @@
           </li>
           
           <li class="col-lg-3 col-sm-12">
-            <%= image_tag "profile-pic/ceci-fernandes.jpg" %>
+            <img src="https://i.ibb.co/0BKbjxR/IMAG3054-1.jpg">
             <blockquote>O Agile Coach Camp foi um final de semana sensacional porque reuniu pessoas com experiência prática em agilidade, dispostas a dividir suas experiências abertamente e explorar assuntos mais avançados. Desde a pauta do carro, até o jantar pós-volta pra São Paulo, os papos foram ótimos</blockquote>
             <h4>Ceci Fernandes</h4>
             <h6>Tech Manager at Nubank & Agile Alliance Brazil board member</h6>
@@ -217,7 +217,7 @@
         <li class="col-lg-3 col-md-7 col-sm-6">
           <img src="<%= position_paper.photo_url %>">
             <% if position_paper.filled_out? %>
-              <%= link_to position_paper.name, position_paper, class: "participant"%>
+              <%= link_to position_paper.name, position_paper.path_with_year, class: "participant"%>
             <% else %>
               <span><%= position_paper.name %></span>
             <% end %>

@@ -24,7 +24,7 @@
             <td><%= position_paper.order_index %></td>
             <td><%= link_to 'Show', position_paper %></td>
             <td><%= link_to 'Edit', edit_position_paper_path(position_paper) %></td>
-            <td><%= link_to 'Destroy', position_paper, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <td><%= link_to 'Destroy', position_paper.path_with_year, method: :delete, data: { confirm: 'Are you sure?' } %> <%= position_paper.path_with_year %></td>
           </tr>
         <% end %>
       </tbody>
