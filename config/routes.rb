@@ -11,9 +11,6 @@ Rails.application.routes.draw do
   get 'welcome', to: "welcome#index", :year => 2019
   get 'submission', to: "welcome#submission", :year => 2020
   
-  scope "/2020" do
-    resources :position_papers, :year => 2020 
-  end
   
   
   scope "/2019" do
@@ -31,6 +28,12 @@ Rails.application.routes.draw do
     get 'conteudo_gerado', to: "welcome#conteudo_gerado", :year => 2018
     
     #get 'surveys/new', to: "surveys#new", :year => 2018
+  end
+  
+  
+  scope "/2020" do
+    resources :position_papers, :year => 2020 
+    get 'submission', to: "welcome#submission", :year => 2020
   end
   
 end
