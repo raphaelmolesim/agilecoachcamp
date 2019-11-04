@@ -46,7 +46,6 @@ body#acc2019 {
       font-size: 34px;
     } 
   }
-
   
   .header-effect {
     background-image: url(image-path("bg-header-bottom.png"));
@@ -60,6 +59,17 @@ body#acc2019 {
   #proposal {
     text-align: center;
     padding: 40px 40px 0px 40px;
+  }
+  
+  #dates-highlight {
+    background-color: #FF7851;
+    color: white;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    top: -45px;
   }
   
   #promisses {
@@ -562,7 +572,7 @@ body#acc2019 {
       img {
         width: 100%;
         
-        margin-bottom: 40px;
+        margin-bottom: 0px;
       }
     }
     
