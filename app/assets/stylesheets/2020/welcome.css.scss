@@ -35,10 +35,10 @@ body#acc2019 {
     padding: 100px 10px;
     text-align: center;
     
-    a#subscribe-now {
+    a {
       font-size: 25px;
       font-weight: bold;
-      margin-top: 10px;
+      margin-top: 20px;
     }
     
     h1 { 
@@ -560,6 +560,9 @@ body#acc2019 {
    
     #landing-img {
       padding: 70px 50px;
+    }
+    #landing-img a {
+      margin-top: 0px;
     }
     
     button {
