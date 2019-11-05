@@ -519,11 +519,11 @@ body#acc2019 {
   #view-position-paper {
     img {
       border-radius: 150px;
-      margin: 0px 30px;
       width: 225px;
       height: 225px;
       display: block;
-      float: right;
+      margin: auto;
+      margin-top: 35px;
     }
   }
 
@@ -640,6 +640,12 @@ body#acc2019 {
     }
     
     #view-position-paper {
+      
+      img {
+        margin: 0px 30px;
+        float: right;
+      }
+      
       br {
         display:none;
       }
