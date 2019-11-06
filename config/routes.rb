@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'welcome#index', :year => 2019
+  root 'welcome#index', :year => 2020
   
   get 'admin/surveys'
 
