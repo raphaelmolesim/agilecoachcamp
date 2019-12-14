@@ -1,5 +1,5 @@
-body#acc2019 { 
-  
+body#acc2019 {
+
   .navbar-brand {
     background-image: url(image-path('logo.png'));
     background-repeat: no-repeat;
@@ -7,24 +7,24 @@ body#acc2019 {
     height: 70px;
     width: 170px;
   }
-  
+
   .navbar-dark .navbar-nav {
-    a.nav-link:link, 
-    a.nav-link:hover, 
-    a.nav-link:active, 
-    a.nav-link:visited  { 
+    a.nav-link:link,
+    a.nav-link:hover,
+    a.nav-link:active,
+    a.nav-link:visited  {
       color: black;
     }
   }
-  
-  .navbar-dark .navbar-nav .show > .nav-link, 
+
+  .navbar-dark .navbar-nav .show > .nav-link,
   .navbar-dark .navbar-nav .show > .nav-link:hover,
   .navbar-dark .navbar-nav .show > .nav-link:active,
   .navbar-dark .navbar-nav .show > .nav-link:visited,
-  .navbar-dark .navbar-nav .show > .nav-link:focus { 
+  .navbar-dark .navbar-nav .show > .nav-link:focus {
     color: black !important;
   }
-  
+
   #landing-img {
     width: 100%;
     height: 500px;
@@ -34,33 +34,33 @@ body#acc2019 {
     background-position:  0% 40%;
     padding: 100px 10px;
     text-align: center;
-    
+
     a {
       font-size: 25px;
       font-weight: bold;
       margin-top: 20px;
     }
-    
-    h1 { 
+
+    h1 {
       color: #FFF;
       font-size: 34px;
-    } 
+    }
   }
-  
+
   .header-effect {
     background-image: url(image-path("bg-header-bottom.png"));
     height: 43px;
   }
-  
+
   #empty-background {
     height: 40px;
   }
-  
+
   #proposal {
     text-align: center;
     padding: 40px 40px 0px 40px;
   }
-  
+
   #dates-highlight {
     background-color: #FF7851;
     color: white;
@@ -71,19 +71,19 @@ body#acc2019 {
     position: relative;
     top: -45px;
   }
-  
+
   #promisses {
     text-align: center;
     li {
       list-style: none;
       float: left;
-      
+
       div {
         background-color: #EFEEEA;
         margin: 40px auto;
         padding: 20px;
       }
-      
+
       img {
         margin: 20px auto;
         display: block;
@@ -91,12 +91,12 @@ body#acc2019 {
         height: 70px;
       }
     }
-  } 
-  
+  }
+
   .alternated {
     background-color: #EFEEEA;
-  } 
-  
+  }
+
   .image-div {
     margin: auto;
     padding: 0px 28px;
@@ -117,25 +117,25 @@ body#acc2019 {
       padding: 10px 0px;
     }
   }
-  
+
   #unconf {
     padding-bottom: 40px;
   }
-  
+
   .center {
     text-align: center;
   }
-  
+
   #pomisses-div {
     margin-top: 40px;
   }
-  
+
   #testmonials {
     h2 {
       text-align: center;
     }
   }
-  
+
   ul#testmonials-list {
     list-style: none;
     padding: 0px;
@@ -170,7 +170,7 @@ body#acc2019 {
       }
     }
   }
-  
+
   #pricing {
     h2 {
       text-align: center;
@@ -179,7 +179,7 @@ body#acc2019 {
     h3 {
       text-align: center;
     }
-    
+
     ul#rooms {
       padding: 0px;
       list-style: none;
@@ -199,7 +199,7 @@ body#acc2019 {
         img {
           width: 100%;
         }
-        
+
         .details-icon {
           width: 50px;
           height: 50px;
@@ -208,13 +208,13 @@ body#acc2019 {
           margin-top: -25px;
           display: block;
         }
-        
+
         .price {
           color: #6A974D;
           font-weight: bolder;
           font-size: 20px;
         }
-        
+
         .wrap:hover .overlay{
           opacity: 1;
         }
@@ -222,7 +222,7 @@ body#acc2019 {
           position: relative;
           width: 100%;
         }
-        
+
         p {
           text-align: center;
         }
@@ -234,17 +234,17 @@ body#acc2019 {
       }
     }
   }
-  
+
   .white-box {
     background-color: white;
     padding: 40px;
     margin-bottom: 40px;
   }
-  
+
   #room-options {
     #room_title {
       background-color: #6A974D;
-      h1 { 
+      h1 {
         color: white;
         font-weight: bolder;
         padding: 100px;
@@ -252,7 +252,7 @@ body#acc2019 {
       }
     }
   }
-  
+
   #participants {
     h2 {
       text-align: center;
@@ -278,7 +278,7 @@ body#acc2019 {
         font-size: 18px;
         margin-top: 15px;
       }
-      
+
       span {
         display: block;
         text-align: center;
@@ -289,14 +289,14 @@ body#acc2019 {
       }
     }
   }
-  
+
   #program {
     padding-bottom: 50px;
     h2 {
       text-align: center;
       padding-bottom: 50px;
     }
-    
+
     ul {
       list-style: none;
       vertical-align: top;
@@ -311,27 +311,27 @@ body#acc2019 {
           text-align: center;
           padding-top: 20px;
         }
-        
+
         .program-detailed {
           list-style: none;
-          
+
             line-height: 2em;
-        
+
         }
       }
     }
   }
-  
+
   #resort {
 
     background-image: url(image-path("cheiro-de-mato.jpg"));
     min-height: 600px;
-    
+
     .white-box {
       text-align: center;
       margin-top: 50px;
     }
-    img { 
+    img {
       width: 100%;
       margin-bottom: 20px;
     }
@@ -339,49 +339,49 @@ body#acc2019 {
       text-align: left;
     }
   }
-  
+
   #footer {
     padding-top: 40px;
-    
+
     h3 {
       font-size: 18px;
       font-weight: bolder;
     }
-    
+
     ul {
       list-style: none;
       padding-left: 0px;
-       
+
       img {
         width: 200px;
         margin:auto;
       }
     }
-    
-    ul#footer-section > li { 
+
+    ul#footer-section > li {
       margin-bottom: 35px;
     }
   }
-  
+
   #final-footer {
     text-align: center;
     padding-bottom: 40px;
   }
-  
+
   .row {
     margin-right: 0px;
     margin-left: 0px;
   }
-  
+
   .division {
     background-image: url(image-path('bg-footer.png'));
     height: 93px;
   }
- 
+
   .submission {
     padding: 100px 40px 40px 40px;
   }
-  
+
   .right {
     text-align: right;
   }
@@ -391,7 +391,7 @@ body#acc2019 {
     font-weight: bolder;
     margin-top: -100px;
   }
-  
+
   #criterias {
     h3 {
       display: block;
@@ -417,7 +417,7 @@ body#acc2019 {
       }
     }
   }
-  
+
   #stages {
     h3 {
       text-align: center;
@@ -439,7 +439,7 @@ body#acc2019 {
       }
     }
   }
-  
+
   #submit-now {
     background-image: url(image-path("resort-1.jpg"));
     height: 500px;
@@ -451,12 +451,12 @@ body#acc2019 {
   }
 
   #process {
-    h3 { 
+    h3 {
       text-align: center;
     }
     min-height: 555px;
     ul {
-     list-style: none; 
+     list-style: none;
      padding-left: 0px;
      li {
        text-align: center;
@@ -475,17 +475,17 @@ body#acc2019 {
      .offset {
        background: none;
      }
-     
+
      .arrow {
        background-image: url(image-path("next.png"));
        background-repeat: no-repeat;
-       background-position:center; 
+       background-position:center;
        background-size: 60px 60px;
      }
-     
+
     }
   }
-  
+
   #accountability {
     margin: auto;
     .cost {
@@ -495,13 +495,13 @@ body#acc2019 {
     .earn {
       color: green;
     }
-    
+
     .total {
       font-weight: bold;
       border-top: 1px solid gray;
       padding-bottom: 15px;
     }
-    
+
     .result {
       font-size: 18px;
       font-weight: bolder;
@@ -509,13 +509,13 @@ body#acc2019 {
       padding-bottom: 15px;
     }
   }
-  
+
   .submission {
     img {
       width: 100%;
     }
   }
-  
+
   #view-position-paper {
     img {
       border-radius: 150px;
@@ -533,7 +533,7 @@ body#acc2019 {
     }
   }
 
-  .alert-success { 
+  .alert-success {
     margin-top: 10px;
     button {
       margin-top: 0px;
@@ -544,48 +544,46 @@ body#acc2019 {
   }
 }
 
-
-
 @media only screen and (min-width: 980px) {
   body#acc2019 {
-    
+
     .navbar-expand-lg .navbar-collapse {
       padding-top: 5px;
     }
-    
-    #landing-img h1 {  
+
+    #landing-img h1 {
       text-align: center;
-      font-size: 70px;
+      font-size: 56px;
       line-height: 1.6em;
     }
-   
+
     #landing-img {
       padding: 70px 50px;
     }
     #landing-img a {
       margin-top: 0px;
     }
-    
+
     button {
       margin-top: 20px;
     }
-  
+
     .image-div {
       padding: 40px 40px 0px 40px;
       top: 0px;
       img {
         width: 100%;
-        
+
         margin-bottom: 0px;
       }
     }
-    
+
     #promisses {
       li div {
         margin: 40px;
       }
     }
-    
+
     #pricing {
       ul li {
         padding-bottom: 0px !important;
@@ -595,34 +593,34 @@ body#acc2019 {
         margin: 0px 40px 40px 40px;
       }
     }
-    
+
     ul#testmonials-list li {
       margin: 20px auto;
     }
-  
+
     #footer {
       padding: 60px 60px 30px 60px;
-      
+
       #organizers li {
         float: left;
         width: 33%;
       }
-      
+
       #supporters {
         li {
           //float: left;
           margin: auto;
         }
       }
-      
+
     }
-  
+
     #criterias {
       li {
         margin: 0px 25px;
       }
     }
-    
+
     #stages {
       height: 370px;
       ul {
@@ -632,23 +630,32 @@ body#acc2019 {
         }
       }
     }
-    
+
     #resort {
-      img { 
+      img {
         width: 50%;
       }
     }
-    
+
     #view-position-paper {
-      
+
       img {
         margin: 0px 30px;
         float: right;
       }
-      
+
       br {
         display:none;
       }
+    }
+  }
+}
+
+
+@media only screen and (min-width: 1330px) {
+  body#acc2019 {
+    #landing-img h1 {
+      font-size: 71px;
     }
   }
 }
