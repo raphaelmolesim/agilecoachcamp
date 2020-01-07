@@ -9,40 +9,44 @@ class WelcomeController < ApplicationController
   def payment
     render_based_by_year :payment
   end
-  
+
   def advertising
     render_based_by_year :advertising
   end
-  
+
   def prestacao_contas
     render_based_by_year :prestacao_contas
   end
-  
+
   def accountability
     render_based_by_year :accountability
   end
-  
+
   def conteudo_gerado
     render_based_by_year :conteudo_gerado
   end
-  
+
+  def faq
+    render_based_by_year :faq
+  end
+
   def shared_room
     @room_option = :shared
     render_based_by_year :room_options
   end
-  
+
   def submission
     render_based_by_year :submission
   end
-  
+
   def comming_soon
     render "#{params[:year]}/welcome/comming_soon", layout: "#{params[:year]}/layouts/comming_soon_layout.html.erb"
   end
-  
-  private 
+
+  private
     def render_based_by_year action
       year = params[:year]
       render "#{year}/welcome/#{action}", layout: "#{year}/layouts/application.html.erb"
     end
-  
+
 end

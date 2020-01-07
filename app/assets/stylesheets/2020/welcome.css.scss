@@ -542,6 +542,34 @@ body#acc2019 {
       margin-bottom: 0px;
     }
   }
+
+  .faq {
+    padding: 30px;
+    article {
+      padding-top: 90px;
+    }
+
+
+    background-color: #EFEEEA;
+
+
+    h2 {
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    li {
+      font-weight: bold;
+      p {
+        font-weight: normal;
+      }
+    }
+
+    ul > li > ul > li {
+      font-weight: normal;
+    }
+
+  }
 }
 
 @media only screen and (min-width: 980px) {
