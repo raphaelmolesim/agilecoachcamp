@@ -636,8 +636,21 @@ body#acc2019 {
 
       #supporters {
         li {
-          //float: left;
+          float: left;
           margin: auto;
+          height: 126px;
+        }
+      }
+      h3:last-child {
+        margin-top: 20px;
+      }
+      #sponsors {
+
+        li {
+          float: left;
+          margin: auto;
+          height: 126px;
+
         }
       }
 
