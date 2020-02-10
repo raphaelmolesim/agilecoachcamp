@@ -356,6 +356,22 @@ body#acc2019 {
         width: 200px;
         margin:auto;
       }
+
+      img.bv {
+        width: 124px;
+        height: 134px;
+      }
+
+      img.tqi {
+        width: 130px;
+        height: 130px;
+      }
+
+      img.k21 {
+        width: 224px;
+        height: 75px;
+      }
+
     }
 
     ul#footer-section > li {
@@ -649,9 +665,32 @@ body#acc2019 {
         li {
           float: left;
           margin: auto;
-          height: 126px;
 
+          img.bv {
+            width: 124px;
+            height: 134px;
+          }
+
+          img.tqi {
+            width: 130px;
+            height: 130px;
+          }
+
+          img.k21 {
+            width: 224px;
+            height: 75px;
+          }
         }
+
+        li.main {
+          height: 160px;
+          div {
+            height: 160px;
+            display: table-cell;
+            vertical-align: middle;
+          }
+        }
+
       }
 
     }
