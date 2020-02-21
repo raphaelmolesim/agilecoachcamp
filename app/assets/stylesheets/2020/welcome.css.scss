@@ -601,7 +601,6 @@ body#acc2019 {
 
       ul {
         position: relative;
-        top: -60px;
         right: 20px;
         list-style: none;
         text-align: right;
@@ -611,6 +610,10 @@ body#acc2019 {
         }
       }
     }
+  }
+
+  .show-desktop {
+    display: none;
   }
 
 }
@@ -754,6 +757,16 @@ body#acc2019 {
       br {
         display:none;
       }
+    }
+
+    #conteudo_gerado {
+      ul {
+        top: -60px;
+      }
+    }
+
+    .show-desktop {
+      display: block;
     }
   }
 }
