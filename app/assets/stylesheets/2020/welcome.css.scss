@@ -586,6 +586,33 @@ body#acc2019 {
     }
 
   }
+
+  #conteudo_gerado {
+    padding-top: 100px;
+    #paineis {
+
+      img {
+        width: 100%;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      ul {
+        position: relative;
+        top: -60px;
+        right: 20px;
+        list-style: none;
+        text-align: right;
+        li {
+          display: inline-block;
+
+        }
+      }
+    }
+  }
+
 }
 
 @media only screen and (min-width: 980px) {
