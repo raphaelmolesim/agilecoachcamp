@@ -1,0 +1,51 @@
+<br><br><br><br>
+
+
+
+<div class="row" id="view-position-paper">
+  <div class="col-lg-1 col-sm-12 offset">
+  </div>
+  <div class="col-lg-10 col-sm-12">
+    <% if not notice.blank? %>
+    <div class="alert alert-dismissible alert-success">
+      <button type="button" class="close " data-dismiss="alert" >&times;</button>
+      <p id="notice"><%= notice %></p>
+    </div>
+    <% end %>
+    
+    <h1 id="position_paper_author">
+      <%= @position_paper.name %>
+      <img src="<%= @position_paper.photo_url %>" >
+    </h1>
+    
+    <br style="clear:both;">
+
+    <p>
+      <h4>O que você planeja aprender ou explorar no Agile Coach Camp e quais os temas que você quer ver discutidos?
+</h4>
+    </p>
+    <p>
+      <%= render_markdown_as_html @position_paper.question_1 %>
+    </p>
+
+    <p>
+      <h4>Como você acredita que pode contribuir nessa edição do Agile Coach Camp?
+</h4>
+      <%= render_markdown_as_html @position_paper.question_2 %>
+    </p>
+
+    <p>
+      <h4>Conte-nos qual é a sua experiência colaborando para que equipes e organizações sejam ágeis
+</h4>
+      <%= render_markdown_as_html @position_paper.question_3 %>
+    </p>
+    
+    <%= link_to 'Voltar', "/2020/#parcelamento", class: "btn btn-info" %>
+  </div>
+  <div class="col-lg-1 col-sm-12 offset">
+  </div>
+  
+  
+</div>
+
+
