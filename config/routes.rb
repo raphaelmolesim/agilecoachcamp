@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   get '/2019', to: "welcome#index", :year => 2019
   get '/2020', to: "welcome#index", :year => 2020
+  get '/2022', to: "welcome#index", :year => 2022
 
   resources :position_papers, except: [:show, :index, :edit, :update, :delete]
   get "/:year/position_papers/:id" => "position_papers#show"
