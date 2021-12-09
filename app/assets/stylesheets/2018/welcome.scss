@@ -1,0 +1,212 @@
+body {
+  font-size: 18px;
+}
+
+section#propose ul, section#commitment ul {
+  list-style: none;
+}
+
+section#promisses a.list-group-item {
+  background-color: #F0B351;
+}
+
+.after-promisses {
+  margin-top: 20px;
+}
+
+section#program table th {
+  text-align: center;
+}
+
+section#program table td {
+  padding: 10px;
+  font-size: 16px;
+}
+
+section#program table tr td:first-child {
+  width: 100px
+}
+
+section#commitment img, section#position_papper img {
+  border-radius: 150px;
+  margin: auto;
+  display: block;
+  height: 183px;
+}
+
+section#commitment a.participant {
+  font-size: 23px;
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+section#participants_list li {
+  
+}
+
+.pricing_list {
+  font-size: 20px;
+  line-height: 2em;
+}
+
+ul#principles {
+  list-style: none;
+  
+  li {
+    padding: 20px;
+    margin: 20px;
+    float: left;
+  }
+  
+  div.principle {
+    background-color: black;
+    border-radius: 150px;
+    width: 150px;
+    height: 150px;
+  }
+
+  h4 {
+    width: 150px;
+    text-align: center;
+  }
+}
+
+section#position_papper {
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+#footer li {
+  float: left;
+  margin-right: 1.5em;  
+}
+
+#footer p.license {
+  margin-top: 1.5em;  
+  margin-bottom: 0px;
+  clear: both;  
+}
+
+img.logo {
+  width: 120px;
+  float: left;
+  margin-right: 10px;
+}
+div#header hr {
+  clear: both;
+}
+
+section#propose div.bg-info {
+  background-color: #68ACAC !important ;
+}
+
+button#register {
+  width: 100%;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.payment-methods {
+  list-style: none;  
+}
+.payment-methods li {
+  float: left;
+  padding: 20px 50px; 
+}
+
+.payment {
+  width: 200px;
+}
+.payment-card {
+  width: 150px;
+}
+.options {
+  list-style: none;  
+  
+}
+.lead {
+  font-size: 20px;
+}
+
+
+@media only screen and (min-width: 980px){
+  .image-ideas {
+    height: 50px;
+  }
+
+  .helper {
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+  }
+}
+body {
+  padding-top: 80px;
+  font-family: Verdana;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+#subscription #options {
+  font-size: 18px;
+}
+
+.hide {
+  display: none;
+}
+
+ul.payment-methods {
+  text-align: center;
+}
+
+#payment-methods {
+  height: 300px;
+}
+
+.red {
+  color: #FF0000;
+}
+
+.green {
+  color: #008800;
+}
+
+section#photos {
+  div{
+    text-align: center;
+  }
+  div.mb-1 {
+    padding-top: 40px;
+  }
+ }
+ 
+@media only screen and (min-width: 980px){
+  section#photos div#general_photos {
+    top:100px
+  }
+}
+
+@media only screen and (min-width: 980px){
+  .show-desktop {
+    display: block !important;
+  }
+}
+
+ul.reset {
+  padding-left: 0px;
+}
+
+section div.jumbotron {
+  padding: 2em 0.5em;
+}
+
+@media only screen and (min-width: 980px){
+  section#news div.jumbotron {
+    padding: 4rem 2rem !important;
+  }
+}

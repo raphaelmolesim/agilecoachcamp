@@ -3,3 +3,5 @@
 //= link_directory ../stylesheets .css
 //= link 2022/application.css
 //= link 2022/application.js
+//= link 2018/application.css
+//= link 2018/application.js
