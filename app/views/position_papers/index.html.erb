@@ -1,0 +1,37 @@
+<br><br><br>
+<div class="row">
+  <div class="col-lg-1 col-sm-12 offset"></div>
+  <div class="col-lg-10 col-sm-12">
+    <p id="notice"><%= notice %></p>
+
+    <h1>Position Papers</h1>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Ano</th>
+          <th>Order Index</th>
+          <th colspan="3">Ações</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @position_papers.each do |position_paper| %>
+          <tr>
+            <td><%= position_paper.name %></td>
+            <td><%= position_paper.year %></td>
+            <td><%= position_paper.order_index %></td>
+            <td><%= link_to 'Show', position_paper.path_with_year %></td>
+            <td><%= link_to 'Edit', "#{position_paper.path_with_year}/edit" %></td>
+            <td><%= link_to 'Destroy', position_paper.path_with_year, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+
+    <br>
+
+    <%= link_to 'Incluir novo Position Paper', new_position_paper_path, class: "btn btn-primary" %>
+  </div>
+</div>

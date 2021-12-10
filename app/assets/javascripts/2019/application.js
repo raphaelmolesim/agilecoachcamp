@@ -11,7 +11,7 @@
 // about supported directives.
 //
 //= require rails-ujs
-//= require 2018/jquery-3.3.1.min
-//= require 2018/popper.min
-//= require 2018/bootstrap.bundle.min
+//= require 2019/jquery-3.3.1.min
+//= require 2019/popper.min
+//= require 2019/bootstrap.bundle.min
 //= require_tree .

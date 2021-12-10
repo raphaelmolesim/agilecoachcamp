@@ -5,3 +5,5 @@
 //= link 2022/application.js
 //= link 2018/application.css
 //= link 2018/application.js
+//= link 2019/application.css
+//= link 2019/application.js

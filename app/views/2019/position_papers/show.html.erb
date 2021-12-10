@@ -1,0 +1,50 @@
+<br><br><br><br>
+
+
+
+<div class="row" id="view-position-paper">
+  <div class="col-lg-1 col-sm-12 offset">
+  </div>
+  <div class="col-lg-10 col-sm-12">
+    <% if not notice.blank? %>
+    <div class="alert alert-dismissible alert-success">
+      <button type="button" class="close " data-dismiss="alert" >&times;</button>
+      <p id="notice"><%= notice %></p>
+    </div>
+    <% end %>
+    
+    <h1 id="position_paper_author">
+      <%= @position_paper.name %>
+      <img src="<%= @position_paper.photo_url %>" >
+    </h1>
+    
+    <br style="clear:both;">
+
+    <p>
+      <h4>Qual é a sua experiência colaborando para que equipes e organizações sejam ágeis?
+</h4>
+    </p>
+    <p>
+      <%= render_markdown_as_html @position_paper.question_1 %>
+    </p>
+
+    <p>
+      <h4>O que você planeja aprender ou explorar nesse Camp?
+</h4>
+      <%= render_markdown_as_html @position_paper.question_2 %>
+    </p>
+
+    <p>
+      <h4>Qual é o maior desafio para a comunidade ágil nos próximos 5 anos e por que?</h4>
+      <%= render_markdown_as_html @position_paper.question_3 %>
+    </p>
+    
+    <%= link_to 'Voltar', "/#{params[:year]}/#parcelamento", class: "btn btn-info" %>
+  </div>
+  <div class="col-lg-1 col-sm-12 offset">
+  </div>
+  
+  
+</div>
+
+

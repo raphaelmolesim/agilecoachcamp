@@ -25,6 +25,9 @@ gem 'jbuilder', '~> 2.7'
 gem 'coffee-rails', '~> 5.0' 
 gem 'jquery-rails', '~> 4.4' 
 
+gem 'has_permalink', '~> 0.1' 
+gem 'redcarpet', '~> 3.5' 
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
