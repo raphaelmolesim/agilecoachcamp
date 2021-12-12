@@ -19,7 +19,6 @@ Rails.application.routes.draw do
     get 'submission', to: "welcome#submission", :year => 2019
   end
 
-
   resources :position_papers, except: [:show, :index, :edit, :update, :delete]
   get "/:year/position_papers/:id" => "position_papers#show"
   get "/:year/position_papers" => "position_papers#index"
@@ -28,25 +27,11 @@ Rails.application.routes.draw do
   patch "/:year/position_papers/:id" => "position_papers#update"
 
 
-=begin
-  get 'admin/surveys'
-
-  get '/2020', to: "welcome#index", :year => 2020
-  get '/2022', to: "welcome#index", :year => 2022
-
-
-
-  #resources :surveys, only: [:new, :create ]
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  get 'welcome', to: "welcome#index", :year => 2019
-  get 'submission', to: "welcome#submission", :year => 2020
-
-
   scope "/2020" do
+    get '/', to: "welcome#index", :year => 2020
     get 'submission', to: "welcome#submission", :year => 2020
     get 'faq', to: "welcome#faq", :year => 2020
     get 'conteudo_gerado', to: "welcome#conteudo_gerado", :year => 2020
   end
-=end
   
 end
