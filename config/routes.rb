@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root 'welcome#comming_soon', :year => 2022
-  #get '/2019', to: "welcome#index", :year => 2019
-
+  get '/launch', to: 'welcome#index', :year => 2022
+  
   scope "/2018" do
     get '/', to: 'welcome#index', :year => 2018
     get 'papers/:id', to: "papers#show", :year => 2018

@@ -18,7 +18,7 @@ $ ->
 	createImgElements(div_images, img) for img in images
 	
 	
-	imageHead = document.getElementById('acc2022')
+	imageHead = document.getElementById('acc2022-cs')
 	i = 0
 	setInterval (->
 	  imageHead.style.backgroundImage = 'url(' + images[i] + ')'
