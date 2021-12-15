@@ -16,21 +16,41 @@
     <title>Agile Coach Camp</title>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    '2019/application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    '2022/application', media: 'all', 'data-turbolinks-track': 'reload' %>
+	<%= javascript_include_tag '2022/application', 'data-turbolinks-track': 'reload' %>
     
     <meta property="og:image" content="<%= image_url "dia1-welcome-drinks-1.jpg" %>">
     <meta property="og:description" content="O Agile Coach Camp é a melhor oportunidade para discussões profundas sobre temas avançados em um formato de desconferência, além de conectar você com outros profissionais do mundo da gestão e com pessoas realmente interessadas em melhorar o trabalho nas organizações.">
     <meta property="og:locale" content="pt_BR">
     <meta property="og:url" content="http://agilecoachcamp.com.br">
-    <meta property="og:title" content="Novidades sobre 2019!">
+    <meta property="og:title" content="Agile Coach Camp 2022 - SAVE THE DATE!">
     <meta property="og:site_name" content="Agile Coach Camp">
     
   </head>
 
-  <body id="comming_soon">
-    
-    <%= yield %>
-    
+  <body id="acc2022">
+	<header>
+		
+		
+		<ul id="ultimos_anos">
+			<li><a href="/2020">2020</a></li>
+			<li><a href="/2019">2019</a></li>
+			<li><a href="/2018">2018</a></li>
+			<li>Ultimas edições</li>
+		</ul>
+		
+		<%= image_tag "logo.png" %>  
+	</header>
+	<div class="layer">
+		
+	    <%= yield %>
+		
+	</div>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NPTRZZS"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    </div>
   </body>
 </html>

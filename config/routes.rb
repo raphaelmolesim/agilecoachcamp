@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'welcome#index', :year => 2022
+  root 'welcome#comming_soon', :year => 2022
   #get '/2019', to: "welcome#index", :year => 2019
 
   scope "/2018" do
