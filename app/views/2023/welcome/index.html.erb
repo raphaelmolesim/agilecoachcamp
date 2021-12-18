@@ -2,6 +2,120 @@
 <div class="bs-docs-section clearfix">
   <div class="row">
     <div class="col-lg-12" id="landing-img">
+      <div class="layer">
+	  	<h1>Aprendizado com pares</h1>
+     	<p>A melhor oportunidade para criar conexões e discussões profundas entre agilistas e entusiastas!</p>
+		<div>
+			<a href="#" class="btn btn-camp btn-lg">Inscrever agora</a>
+	 	</div>
+      </div>
+	</div>
+  </div>
+</div>
+	
+	2000x 1335
+<div class="bs-docs-section clearfix ">
+  <div class="row default-section">
+    <div class="col-lg-7 text-content">
+		<div>
+      		<h1>Como surgiu o Agile Coach Camp?</h1>
+      		<p>Após participar de diversas conferências e eventos, observamos que alguns dos aprendizados e insights mais significativos eram gerados durante conversas e trocas de ideias informais entre os participantes durante os intervalos no corredor, almoço e até mesmo no happy hour.</p>
+			<p>O Agile Coach Camp proporciona um ambiente para aprofundar conexões, aprendizados e gerar insights entre agilistas e entusiastas que buscam impactar de forma significativa o trabalho nas organizações. Tudo isso em um formato de desconferência e em meio à natureza.</p>
+			<p>A próxima edição acontece nos dias 14, 15 e 16 de fevereiro em um hotel fazenda próximo a cidade de São Paulo. Os participantes são livres para trazerem suas famílias para usufruir do hotel nos dias do evento, de acordo com nossa política de acomodações.</p>
+		</div>
+    </div>
+	
+	
+    <div class="col-lg-5 image-content">
+      <%= image_tag "foto-origem"  %>
+	</div>
+  </div>
+</div>
+	
+	
+<div class="bs-docs-section clearfix ">
+  <div class="row alternated-section">
+    <div class="col-lg-5 image-content">
+      <%= image_tag "foto-ost"  %>
+	</div>
+	
+    <div class="col-lg-7 text-content">
+		<div>
+      		<h1>Como funciona?</h1>
+      		<p>Com o propósito de maximizar os aprendizados e trazer um pouco de estrutura e organização sem deixar de lado a liberdade das conversas informais, vamos utilizar o modelo Open Spaces como base da desconferência.</p>
+			<p>Em um Open Space, as pessoas se auto-organizam em torno de um tópico de interesse e criam suas próprias agendas. Os participantes interessados se reúnem nos tópicos formando grupos para gerar ideias, debates e discussões sobre os temas propostos na agenda. Geralmente, as discussões têm um único facilitador que segue os seguintes princípios:</p>
+			
+			<ul>
+				<li>“Aqueles que vierem são as pessoas certas”</li>
+				<li>“O que aconteceu é o melhor que poderia ter acontecido”</li>
+				<li>“Quando ele começa é o momento certo”</li>
+				<li>“Acaba quando acaba”</li>
+				<li>““Se você sente que não está aprendendo ou contribuindo, sinta-se livre para dar poucos passos para ir à um lugar que possa aprender e contribuir mais. Isso é conhecido como a lei dos dois pés”</li>
+			</ul>
+		</div>
+    </div>
+  </div>
+</div>
+
+<div class="bs-docs-section clearfix ">
+  <div class="row">
+    <div class="col-lg-12 image-full-content">
+      <%= image_tag "foto-fogueira"  %>
+	</div>
+  </div>
+</div>
+
+<div class="bs-docs-section clearfix ">
+  <div class="row program-section">
+    <div class="col-lg-6 title">
+		<div>
+      	  	<h1>Características</h1>
+	  		<h3>Change the way you travel, be closer to nature. Take a second to appreciate everyday beauty</h3>
+	  	</div>
+	</div>
+	
+    <div class="col-lg-6 features">
+		<ul>
+			<li>
+				<div>
+					<%= image_tag "network.png" %>
+					<h2>Conexões</h2>
+					<p>Valorizamos as conexões e acreditamos que elas nos permitem alcançar muito mais quando são fortes. Esteja preparado para criar relacionamentos!</p>
+				</div>
+			</li>	
+			<li>
+				<div>
+					<%= image_tag "random_path.png" %>
+					<h2>Acaso</h2>
+					<p>Estamos criando a oportunidade de coisas excelentes acontecerem entre as pessoas certas, no lugar certo e no tempo certo!</p>
+				</div>
+			</li>
+			<li>
+				<div>
+					<%= image_tag "Ball.png" %>
+					<h2>Diversão</h2>
+					<p>Teremos atividades ao ar livre para que todos os participantes possam liberar a criatividade e a inovação durante o evento.
+</p>
+				</div>
+			</li>
+			<li>
+				<div>
+					<%= image_tag "learn.png" %>
+					<h2>Aprendizados</h2>
+					<p>Criaremos mecanismos de promover todo o conhecimento que estiver sendo gerado e compartilhar os aprendizados.</p>
+				</div>
+			</li>		
+		</ul>
+	</div>    
+  </div>
+</div>
+
+
+
+<!--
+<div class="bs-docs-section clearfix">
+  <div class="row">
+    <div class="col-lg-12" id="landing-img">
       <h1>A melhor oportunidade para criar conexões e discussões profundas entre agilistas e entusiastas!</h1>
       <a class="btn btn-danger btn-lg" href="/2020/submission">Inscreva se!!</a>
     </div>
@@ -24,7 +138,7 @@
 
       <div class="row ">
         <%= image_tag "fogueira.jpg" %>
-        <p id="dates-highlight">14 - 16 de Fevereiro de 2020</p>
+        <p id="dates-highlight">14 - 16 de Fevereiro</p>
       </div>
     </div>
   </div>
@@ -205,7 +319,7 @@
     </div>
   </div>
 
-  <%= render "2020/welcome/pricing" %>
+  <%= render "2022/welcome/pricing" %>
 
   <div class="row" id="participants">
     <div class="col-lg-12 col-sm-12">
@@ -223,16 +337,6 @@
 
       <ul class="row">
 
-        <% @position_papers.each do |position_paper| %>
-        <li class="col-lg-3 col-md-7 col-sm-6">
-          <img src="<%= position_paper.photo_url %>">
-            <% if position_paper.filled_out? %>
-              <%= link_to position_paper.name, position_paper.path_with_year, class: "participant"%>
-            <% else %>
-              <span><%= position_paper.name %></span>
-            <% end %>
-        </li>
-        <% end %>
 
     </div>
   </div>
@@ -245,3 +349,5 @@
         </iframe>
 
   </div>
+
+-->

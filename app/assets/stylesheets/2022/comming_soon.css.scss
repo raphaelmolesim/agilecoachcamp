@@ -1,0 +1,108 @@
+@font-face {
+  font-family: 'Prompt';
+  src: asset-url('Prompt-Regular.woff2') format("woff2"),
+       asset-url('Prompt-Regular.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'Prompt Thin';
+  src: asset-url('Prompt-Thin.woff2') format("woff2"),
+       asset-url('Prompt-Thin.ttf') format("truetype");
+}
+
+body#acc2022-cs {	
+	
+	background-image: url("https://by3301files.storage.live.com/y4mKSderDB_j8kSLFrc96w_vhSTQWGSGUW5MNXZqdmmnkb7m_k0qStnTYO-U8dISW1U_OOriAvzZl8zwlFYCl9__zm4Ymza14bT_9Ey1n2JCtkqP3OYzX5QDgxqPcOkSt54u_sR4TZr7DBI46NB4aGIf5zhBBbgsgPibsi1MczSYkE0HLoHJwwL7J7wUT2Q7YYBelsCptZ2tWwpSO1uX4xAEA/1%20dia%2086.JPG?psid=1&width=1263&height=843");
+	transition: background 1.5s linear;
+	background-size: cover ;
+  	background-position: center;
+
+	h1, p {
+		font-family: "Prompt";
+		color: white
+	}
+	
+	img {
+		width: 150px;
+		
+	}
+	
+	header {
+		width: 100%;
+		background-color: white ;
+		
+		#ultimos_anos {
+			margin: 0px;
+			li {
+				line-height: 40px;
+				text-align: center;
+				float: right;
+				display: inline-block;
+				font-family: "Prompt";				
+				color: black;
+				font-size: 25px;
+				padding: 9px;
+			}
+			li:last-child {
+				display: none;
+			}
+		}
+	
+	}
+	
+	div.layer {
+		width: 100%;
+		background: rgba(0, 0, 0, 0.7);
+		height: 100vh;
+		padding-left: 5%;
+		
+		div.comming_soon {
+			width: 100%;
+			height: 100vh;
+			display: table-cell;
+			vertical-align: middle;
+			
+			h1 {
+				font-size: 60px;
+				font-weight: 600;
+				letter-spacing: 7px;
+				line-height: 80px;
+			}
+			
+			p {
+				font-family: "Prompt Thin";
+				font-size: 20px;
+				font-weight: 100;
+				line-height: 31px;
+			}
+			
+		
+		}
+		
+	}
+    
+}
+
+
+@media only screen and (min-width: 980px) {
+	body#acc2022-cs {
+  		background-position: inherit;
+		
+		div.layer {
+			width: 100%;
+			background: rgba(0, 0, 0, 0.7);
+			height: 100vh;
+			padding-left: 50%;
+			h1 {
+				font-size: 80px;
+			}
+		}
+		
+		
+		header #ultimos_anos {
+			li:last-child {
+				display: inline-block;
+			}
+		}
+	}
+}
