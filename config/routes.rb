@@ -35,4 +35,10 @@ Rails.application.routes.draw do
     get 'conteudo_gerado', to: "welcome#conteudo_gerado", :year => 2020
   end
   
+  scope "/2022" do
+    # get '/', to: "welcome#index", :year => 2020
+    get 'submission', to: "welcome#submission", :year => 2022
+    get 'faq', to: "welcome#faq", :year => 2022
+  end
+  
 end

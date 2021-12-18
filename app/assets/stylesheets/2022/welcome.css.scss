@@ -1,4 +1,5 @@
 body#acc2019 {
+	overflow-x: hidden;
 	
 	h1 {
 		margin-bottom: 25px;
@@ -48,6 +49,7 @@ body#acc2019 {
     h1 {
       color: #FFF;
       font-size: 34px;
+			margin-bottom: 0px;
     }
   }
 
@@ -76,10 +78,18 @@ body#acc2019 {
     top: -45px;
   }
 
-  #covid, #publico-alvo > div > div {
+  #covid {
+    text-align: center;
+		height: 450px;	
+		display: flex;
+  	justify-content: center;
+  	flex-direction: column;	
+  }
+
+  #publico-alvo > div > div {
     text-align: center;
     padding: 40px 40px 40px 40px;
-	height: 490px;	
+		height: 490px;	
   }
 
   #promisses {
@@ -107,6 +117,21 @@ body#acc2019 {
     background-color: #EFEEEA;
   }
 
+  .alert-promo {
+	  width: 80%;
+	  margin: auto;
+	  margin-top: -15px;
+	  margin-bottom: 20px;
+  }
+  
+  #image-banner {
+	  height: 450px;
+	  background-image: image-url("foto-represa.jpeg");
+	  background-size: cover;
+		background-attachment: fixed;
+		background-position: center;
+  }
+  
   .image-div {
     margin: auto;
     padding: 0px 28px;
@@ -626,6 +651,11 @@ body#acc2019 {
     display: none;
   }
 
+
+	#photo-gallery {
+		display:none;
+	}
+	
 }
 
 @media only screen and (min-width: 980px) {
@@ -778,6 +808,30 @@ body#acc2019 {
     .show-desktop {
       display: block;
     }
+		
+		div > #photo-gallery {
+			height: 350px;			
+		}
+		#photo-gallery {			
+			display: block;
+			list-style: none;
+			margin-left: -40px;
+			li {
+				float: left;
+				position: absolute;
+				img {
+					height: 350px;
+					width: 300px;
+	  			object-fit: cover;
+				}
+			}
+			li.small-img {
+				img {
+					width: 240px;
+				}
+			}
+		}
+		
   }
 }
 
