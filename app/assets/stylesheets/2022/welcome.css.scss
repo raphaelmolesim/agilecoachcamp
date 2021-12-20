@@ -80,7 +80,8 @@ body#acc2019 {
 
   #covid {
     text-align: center;
-		height: 450px;	
+		min-height: 450px;
+    padding: 40px 40px 40px 40px;
 		display: flex;
   	justify-content: center;
   	flex-direction: column;	
@@ -89,7 +90,7 @@ body#acc2019 {
   #publico-alvo > div > div {
     text-align: center;
     padding: 40px 40px 40px 40px;
-		height: 490px;	
+		min-height: 490px;	
   }
 
   #promisses {
@@ -153,8 +154,8 @@ body#acc2019 {
     }
   }
 
-  #unconf {
-    padding-bottom: 40px;
+  #unconf > div > div {
+    padding: 40px 40px 40px 40px;
   }
 
   .center {

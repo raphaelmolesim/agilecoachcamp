@@ -23,8 +23,7 @@ body#acc2022-cs {
 	}
 	
 	img {
-		width: 150px;
-		
+		width: 130px;		
 	}
 	
 	header {
@@ -58,12 +57,12 @@ body#acc2022-cs {
 		
 		div.comming_soon {
 			width: 100%;
-			height: 100vh;
+			height: 90vh;
 			display: table-cell;
 			vertical-align: middle;
 			
 			h1 {
-				font-size: 60px;
+				font-size: 50px;
 				font-weight: 600;
 				letter-spacing: 7px;
 				line-height: 80px;
@@ -91,9 +90,9 @@ body#acc2022-cs {
 		div.layer {
 			width: 100%;
 			background: rgba(0, 0, 0, 0.7);
-			height: 100vh;
+			height: 110vh;
 			padding-left: 50%;
-			h1 {
+			div.comming_soon h1 {
 				font-size: 80px;
 			}
 		}
