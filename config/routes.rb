@@ -31,8 +31,9 @@ Rails.application.routes.draw do
     get '/', to: "welcome#index", :year => 2020
     get 'submission', to: "welcome#submission", :year => 2020
     get 'faq', to: "welcome#faq", :year => 2020
-    get 'conteudo_gerado', to: "welcome#conteudo_gerado", :year => 2020
+    get 'conteudo_gerado', to: "welcome#conteudo_gerado", :year => 2020]
     get 'fotos_evento', to: "welcome#fotos_evento", :year => 2020
+    get 'prestacao_contas', to: "welcome#accountability", :year => 2020
   end
   
   scope "/2022" do
