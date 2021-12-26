@@ -29,6 +29,10 @@ class WelcomeController < ApplicationController
   def faq
     render_based_by_year :faq
   end
+  
+  def fotos_evento
+    render_based_by_year :fotos_evento
+  end
 
   def shared_room
     @room_option = :shared

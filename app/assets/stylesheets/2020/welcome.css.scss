@@ -587,29 +587,45 @@ body#acc2019 {
 
   }
 
+
+	
+	span.news {
+		color: red;
+		font-family: Arial;
+		font-weight: bold;
+	}
+	
+	span.soon {
+		color: #ffce67;
+		font-family: Arial;
+		font-weight: bold;
+	}
+	
   #conteudo_gerado {
     padding-top: 100px;
-    #paineis {
-
-      img {
-        width: 100%;
-      }
-
-      .hidden {
-        display: none;
-      }
-
-      ul {
-        position: relative;
-        right: 20px;
-        list-style: none;
-        text-align: right;
-        li {
-          display: inline-block;
-
-        }
-      }
-    }
+		
+		a {
+			text-align: center;
+		}	
+		
+		h1 {
+			text-align: center;	
+		}
+		
+		img {
+			border-bottom: 3px solid;
+			margin-bottom: 20px;
+			padding-bottom: 20px;
+	    border-bottom-style: inset;
+		}
+		
+		img:last-child {
+			border-bottom: 0px solid;
+			margin-bottom: 20px;
+			padding-bottom: 20px;
+	    border-bottom-style: none;
+		}  
+	 
   }
 
   .show-desktop {
