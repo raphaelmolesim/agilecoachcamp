@@ -54,9 +54,14 @@
     </div>  
 
    	<div class="col-lg-12 col-sm-12 submission center">
+      <% if Time.now > Time.new(2022, 03, 28, 23, 59, 59) %>
+        <div class="warning">Inscrições encerradas!</div>
+      <% else %>
       <div>
-        <a class="btn btn-danger center submit-pp" href="https://forms.gle/5LKeVnkCzSmUh9oo7">Submeter agora!!</a>
+        <a class="btn btn-danger center submit-pp" href="https://forms.gle/5LKeVnkCzSmUh9oo7">Submeter agora!!</a>        
       </div>
+      <div class="warning">(Somente até dia 28/03/2022 às 23:59 horário de São Paulo)</div>
+      <% end %>
     </div>
   </div>    
   <div class="row division">

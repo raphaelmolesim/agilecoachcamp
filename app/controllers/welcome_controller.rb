@@ -47,10 +47,6 @@ class WelcomeController < ApplicationController
     render "#{params[:year]}/welcome/comming_soon", layout: "#{params[:year]}/layouts/comming_soon_layout.html.erb"
   end
 
-  def time_now
-    render plain: "Now: #{Time.now} New Day #{Time.new(2022, 03, 28, 23, 59, 59)}", content_type: 'text/plain'
-  end
-
   private
     def render_based_by_year action
       year = params[:year]
