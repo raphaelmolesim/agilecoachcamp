@@ -58,6 +58,12 @@ body#acc2019 {
     height: 43px;
   }
 
+  .warning {    
+    color: #FFCE67;
+    font-weight: bold;
+    font-size: 24px;
+  }
+
   #empty-background {
     height: 170px;
   }
@@ -664,6 +670,10 @@ body#acc2019 {
 
     .navbar-expand-lg .navbar-collapse {
       padding-top: 5px;
+    }
+
+    .warning {
+      display: inline-block;
     }
 
     #landing-img h1 {

@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   root 'welcome#index', :year => 2022
   get '/launch-23', to: 'welcome#index', :year => 2023
   
+  get '/time_now', to: 'welcome#time_now'
+  
   scope "/2018" do
     get '/', to: 'welcome#index', :year => 2018
     get 'papers/:id', to: "papers#show", :year => 2018
