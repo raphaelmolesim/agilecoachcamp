@@ -15,7 +15,11 @@ class PositionPapersController < ApplicationController
   # GET /position_papers.json
   def index
     @position_papers = PositionPaper.where(year: params[:year]).order(:order_index)
-    render :index
+
+    respond_to do |format|
+        format.html { render :index }
+        format.json { render :json => @position_papers }
+    end
   end
 
   # GET /position_papers/1
